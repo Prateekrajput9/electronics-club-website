@@ -1,21 +1,19 @@
-import { useState } from 'react'
-
-import './App.css'
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Projects from "./components/Projects";
+import Team from "./components/Team";
+import Contact from "./components/Contact";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-     
-       
-      <div className="min-h-screen bg-gray-600 flex justify-center items-center">
-      <h1 className="text-4xl font-bold text-blue-500">TailwindCSS is Working!</h1>
- 
+    <div className="bg-gray-50 text-gray-800">
+      <Hero />
+      <About />
+      <Projects />
+      <Team />
+      <Contact />
     </div>
-    
-    </>
-  )
+  );
 }
 
-export default App
+export default App;
