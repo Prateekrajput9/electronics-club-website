@@ -1,0 +1,51 @@
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { UserCircle } from "lucide-react";
+
+const Navbar = () => {
+  const [active, setActive] = useState("Home");
+
+  const navItems = ["Home", "Blogs", "Projects", "Team", "About us","Contact Us"];
+
+  return (
+    <header className="fixed top-0 left-0 w-full z-50 bg-black/25 backdrop-blur-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center h-16">
+          {/* Left Logo */}
+          <div className="flex-shrink-0">
+            <img
+              className="h-10"
+              src="/logo.png"
+              alt="Ee club IIT Indore"
+            />
+          </div>
+
+          {/* Center Nav */}
+          <nav className="hidden md:flex gap-6 ">
+            {navItems.map((item) => (
+              <Link
+                key={item}
+                to={`/${item.toLowerCase()}`}
+                onClick={() => setActive(item)}
+                className={`text-white text-lg font-semibold relative transition-all duration-300 ${
+                  active === item
+                    ? "after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after: after:bg-blue-400"
+                    : "hover:text-blue-400"
+                }`}
+              >
+                {item}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Right Icon */}
+          {/* <div className="flex items-center">
+            <UserCircle className="text-white h-8 w-8" />
+          </div> */}
+        </div>
+      </div>
+    </header>
+  );
+};
+
+export default Navbar;

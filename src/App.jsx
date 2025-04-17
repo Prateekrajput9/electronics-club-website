@@ -1,19 +1,23 @@
 import { useState } from 'react'
-
+import { Route, Routes, BrowserRouter, useLocation } from 'react-router-dom'
 import './App.css'
-
+import TentacleBackground from './pages/background'
+import Navbar from './pages/Navbar'
+import HomePage from './pages/Homepage'
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-     
-       
-      <div className="min-h-screen bg-gray-600 flex justify-center items-center">
-      <h1 className="text-4xl font-bold text-blue-500">TailwindCSS is Working!</h1>
- 
-    </div>
+    <>   
+     <TentacleBackground />
+
+     <div style={{ position: "relative", zIndex: 2, color: "white", padding: 20 }}>
     
+        <Navbar/>
+        <HomePage/>
+      </div>
+
+
     </>
   )
 }

@@ -1,0 +1,44 @@
+{
+    "recent": [
+        {
+            "id": 1,
+            "key": 1,
+            "img": "images/Events/marketing_fiesta.jpg",
+            "heading": "Marketing Fiesta",
+            "content": "The primary purpose of this particular competition was to facilitate a case study that was specifically designed to delve...",
+            "data": "The primary purpose of this particular competition was to facilitate a case study that was specifically designed to delve into the intricacies of marketing. The main aim was to explore and gain valuable insights and knowledge in the realm of marketing, which serves as the lifeblood of any successful business. Participants were tasked with putting their skills in the art of buying and selling to the test, as this competition served as a platform to assess their proficiency in this essential aspect of business operations."
+        },
+        {
+            "id": 2,
+            "key": 2,
+            "img": "images/Events/pitching_competition.jpeg",
+            "heading": "Pitching Competition",
+            "content": "Marketing has evolved into one of the most crucial pillars for building brands in the past few years.Disruptive marketing strategies have the...",
+            "data": "Marketing has evolved into one of the most crucial pillars for building brands in the past few years.Disruptive marketing strategies have the potential to completely transform market dynamics.To help our budding entrepreneurs learn exactly that,we held pitching competitions,for Fluxus 10.0.It helped students refine their marketing and persuasive skills in the form of a healthy and fun competition.It was aimed to make a subtle effort to help students learn the importance of belief and trust of an entrepreneur on his product.It was a fun and competitive event with products and pitches of all kinds !"
+        },
+        {
+            "id": 3,
+            "key": 3,
+            "img": "images/Events/entrepenuers_talk.jpeg",
+            "heading": "Entrepreneur's Talks",
+            "content": "Talk shows remain the highlight of the summit each year,attracting a huge audience of students,professors and more from ...",
+            "data": "Talk shows remain the highlight of the summit each year,attracting a huge audience of students,professors and more from across different institutions.This year we aim to make the talk show grand and glorious than ever,and will be hosting some of the most celebrated entrepreneurs who are sure to leave you spellbound with their journeys and experiences.In the past editions,we have hosted entrepreneurs like Aman Dhattarwal, Sandeep Jain,Mayank Pratap and many more who have built their businesses from scratch and have brought revolution in their respective fields.We are excited to host yet another power packed edition to the talk show that will leave you energized to the core !"
+        },
+        {
+            "id": 4,
+            "key": 4,
+            "img": "images/Events/startup_expo.jpeg",
+            "heading": "Startup Expo",
+            "content": "A start up expo was organised that witnessed stalls of numerous interesting and innovative startups that had engaging display units...",
+            "data": "A start up expo was organised that witnessed stalls of numerous interesting and innovative startups that had engaging display units.A lot of people came to interact with the founders and learnt how startups actually get going.The event was a huge success and the audience was left thoroughly impressed."
+        }
+       
+    ],
+    "upcoming": [
+        {
+            "img": "images/E-summit.jpg",
+            "heading": "E-Summit 2024",
+            "content": "E-Summit is the flagship event organized by the E-Cell,IIT Indore annually.It is one of the most awaited events hosted by the institute that witnesses massive participation from across the country.Through this event,we aim to ignite the entrepreneur inside students by bringing them together to compete in various competitions exploring all aspects of entrepreneurship. We also host some of the most seasoned and celebrated entrepreneurs who enlighten our audience with their jaw-dropping journeys."
+        }
+    ]
+}
