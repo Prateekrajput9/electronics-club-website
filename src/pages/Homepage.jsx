@@ -26,24 +26,26 @@ export default function HomePage() {
           </p>
           <h1 className="text-white text-4xl md:text-6xl font-bold">
             Electronics Club <br />
-            IIT <span className="text-blue-400">Indore</span>
-          </h1>
+             <h1 className="text-white text-3xl font-bold">
+  IIT <span style={{ color: "#00ffff" }}>Indore</span>
+</h1>
+</h1>
         </div>
       </div>
 
       {/* Social Icons - Right Side */}
-      <div className="absolute top-1/3 right-4 flex flex-col gap-4 text-white z-30">
+      <div className="absolute top-1/3 right-4 flex flex-col gap-4 text-white z-50 bg-black/25 backdrop-blur-md p-6">
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin className="w-6 h-6 hover:scale-110 transition-transform" />
+          <FaLinkedin className="w-6 h-6 hover:scale-150 transition-transform" />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaTwitter className="w-6 h-6 hover:scale-110 transition-transform" />
+          <FaTwitter className="w-6 h-6 hover:scale-150 transition-transform" />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaInstagram className="w-6 h-6 hover:scale-110 transition-transform" />
+          <FaInstagram className="w-6 h-6 hover:scale-150 transition-transform" />
         </a>
         <a href="#" target="_blank" rel="noopener noreferrer">
-          <FaFacebook className="w-6 h-6 hover:scale-110 transition-transform" />
+          <FaFacebook className="w-6 h-6 hover:scale-150 transition-transform" />
         </a>
       </div>
     </div>
