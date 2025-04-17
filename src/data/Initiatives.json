@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "E-summit",
+      "body": "E-Summit is the flagship event organized by the E-Cell, IIT Indore annually. It is one of the most awaited events hosted by the institute that witnesses massive participation from across the country. Through this event, we aim to ignite the entrepreneur inside students by bringing them together to compete in various competitions exploring all aspects of entrepreneurship.",
+      "imagePath": "../images/Intiatives/image01.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Lecture Series",
+      "body": "In today’s world of entrepreneurship, budding entrepreneurs require proper guidance and a direction to follow. This lecture series is a chance to make their skill development easier by enriching their knowledge with the wisdom of experts from all over the country. In the fast-paced and ever-evolving world of entrepreneurship.",
+      "imagePath": "../images/Intiatives/image02.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Engendea",
+      "body": "The Engendea event is a day-long event where multiple teams participate to showcase their innovation skills. The main objective of this event is for participants to present their ideas and business models, aiming to achieve great success with their concepts. The event provides a platform for participants to demonstrate their creativity, problem-solving abilities, and entrepreneurial spirit.",
+      "imagePath": "images/Intiatives/image03.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Workshops",
+      "body": "These interactive training sessions are organized for the entrepreneurial community to gain hands-on experience in developing successful business models and reaching out to people to publicize their products and services.The workshops organized as part of the entrepreneurial community focus on providing interactive training sessions.",
+      "imagePath": "images/Intiatives/image04.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Entrepreneurship Awareness Camp",
+      "body": "EAC is designed to educate and create awareness about entrepreneurship among individuals, particularly aspiring entrepreneurs. The camp aims to inspire, inform, and equip participants with the knowledge, skills, and resources necessary to start and run their own businesses.",
+      "imagePath": "images/Intiatives/image05.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Talk Sessions",
+      "body": "Start-up founders, successful entrepreneurs, and venture capitalists are invited to share their experiences and insights into entrepreneurship. These sessions help students broaden their knowledge, gain exposure to different fields, and interact with experts, contributing to their overall educational experience.",
+      "imagePath": "images/Intiatives/image06.jpg"
+    }
+  ]
+  

@@ -1,0 +1,57 @@
+/* Navbar container */
+.nav {
+  backdrop-filter: blur(7px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 10px;
+}
+
+/* Menu links (desktop) */
+.DESKTOP-MENU li a {
+  position: relative;
+  padding: 8px 0;
+  transition: color 0.3s ease;
+}
+
+/* Underline animation on hover */
+.DESKTOP-MENU li a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #3b82f6; /* Tailwind blue-500 */
+  transition: width 0.3s ease;
+}
+
+.DESKTOP-MENU li a:hover::after {
+  width: 100%;
+}
+
+/* On scroll, add shadow */
+.nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Hamburger animation */
+.HAMBURGER-ICON span {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Mobile menu links */
+.mobile-menu li a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937; /* Tailwind gray-800 */
+  transition: color 0.2s ease;
+}
+
+.mobile-menu li a:hover {
+  color: #0d163f; /* Tailwind blue-500 */
+}
+
+/* Smooth scroll behavior for hash links */
+html {
+  scroll-behavior: smooth;
+}
