@@ -16,7 +16,7 @@ const Navbar = () => {
             <img
               className="h-10"
               src="/logo.png"
-              alt="Ee club IIT Indore"
+              alt="Ee club logo"
             />
           </div>
 
@@ -30,7 +30,7 @@ const Navbar = () => {
                 className={`text-white text-lg font-semibold relative transition-all duration-300 ${
                   active === item
                     ? "after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after: after:bg-blue-400"
-                    : "hover:text-blue-400"
+                    : "hover:text-green-400"
                 }`}
               >
                 {item}
