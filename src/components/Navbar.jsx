@@ -5,7 +5,14 @@ import { UserCircle } from "lucide-react";
 const Navbar = () => {
   const [active, setActive] = useState("Home");
 
-  const navItems = ["Home", "Blogs", "Projects", "Team", "About us","Contact Us"];
+  const navItems = [
+    "Home",
+    "Blogs",
+    "Projects",
+    "Team",
+    "About us",
+    "Contact Us",
+  ];
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black/25 backdrop-blur-md">
@@ -13,11 +20,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Left Logo */}
           <div className="flex-shrink-0">
-            <img
-              className="h-10"
-              src="/logo.png"
-              alt="Ee club logo"
-            />
+            <img className="h-10" src="/logo.png" alt="Ee club logo" />
           </div>
 
           {/* Center Nav */}

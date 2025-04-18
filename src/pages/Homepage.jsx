@@ -1,8 +1,10 @@
-import { FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from 'react-icons/fa';
+import { FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
+import Navbar from "../components/Navbar";
 
-export default function HomePage() {
+const HomePage = () => {
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative min-h-screen w-full overflow-hidden text-white">
+      <Navbar />
       {/* Video Background */}
       {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover"
@@ -26,10 +28,10 @@ export default function HomePage() {
           </p>
           <h1 className="text-white text-4xl md:text-6xl font-bold">
             Electronics Club <br />
-             <h1 className="text-white text-3xl font-bold">
-  IIT <span style={{ color: "#00ffff" }}>Indore</span>
-</h1>
-</h1>
+            <h1 className="text-white text-3xl font-bold">
+              IIT <span style={{ color: "#00ffff" }}>Indore</span>
+            </h1>
+          </h1>
         </div>
       </div>
 
@@ -50,4 +52,6 @@ export default function HomePage() {
       </div>
     </div>
   );
-}
+};
+
+export default HomePage;
