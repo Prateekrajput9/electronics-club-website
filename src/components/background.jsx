@@ -5,10 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use loadSlim, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use loadBasic, install the "@tsparticles/basic" package too.
 
-
-
 const ParticlesComponent = (props) => {
-
   const [init, setInit] = useState(false);
   // this should be run only once per application lifetime
   useEffect(() => {
@@ -45,7 +42,7 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            mode: 'grab',
+            mode: "grab",
           },
         },
         modes: {
@@ -97,13 +94,17 @@ const ParticlesComponent = (props) => {
       },
       detectRetina: true,
     }),
-    [],
-  
-  
+    []
   );
 
-
-  return <Particles id={props.id} init={particlesLoaded} className="particlesbackground" options={options} />; 
+  return (
+    <Particles
+      id={props.id}
+      init={particlesLoaded}
+      className="particlesbackground"
+      options={options}
+    />
+  );
 };
 
 export default ParticlesComponent;
