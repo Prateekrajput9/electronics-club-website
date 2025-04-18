@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { UserCircle } from "lucide-react";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
-
+  const location = useLocation().pathname.split("/")[1];
+  console.log(location);
   const navItems = [
     "Home",
     "Blogs",
@@ -29,9 +29,8 @@ const Navbar = () => {
               <Link
                 key={item}
                 to={`/${item.toLowerCase()}`}
-                onClick={() => setActive(item)}
                 className={`text-white text-lg font-semibold relative transition-all duration-300 ${
-                  active === item
+                  location === item.toLowerCase()
                     ? "after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after: after:bg-blue-400"
                     : "hover:text-green-400"
                 }`}
