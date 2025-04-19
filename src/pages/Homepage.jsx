@@ -1,10 +1,11 @@
 import { FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 import Navbar from "../components/Navbar";
-
+import ParticlesComponent from "../components/background";
 const HomePage = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-white">
       <Navbar />
+      <ParticlesComponent />
       {/* Video Background */}
       {/* <video
         className="absolute top-0 left-0 w-full h-full object-cover"

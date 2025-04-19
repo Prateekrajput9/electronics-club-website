@@ -1,9 +1,9 @@
 export const teamMembers = [
   {
     id: 1,
-    name: "Aditya Sharma",
-    position: "Club President",
-    department: "Leadership",
+    name: "Adavy kunte",
+    position: "club Head",
+    department: "Head",
     image: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
     email: "president@electronics-club.org",
     github: "https://github.com/",
@@ -11,8 +11,8 @@ export const teamMembers = [
   },
   {
     id: 2,
-    name: "Priya Mehta",
-    position: "Vice President",
+    name: "Prateek",
+    position: "Web dev head",
     department: "Leadership",
     image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
     email: "vp@electronics-club.org",
@@ -21,8 +21,8 @@ export const teamMembers = [
   },
   {
     id: 3,
-    name: "Nikhil Patel",
-    position: "Technical Lead",
+    name: "varad ",
+    position: "Co Head",
     department: "Leadership",
     image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
     email: "tech@electronics-club.org",
