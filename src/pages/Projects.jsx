@@ -79,10 +79,8 @@ export default function ProjectsPage() {
 
   return (
     <div
-      className="min-h-screen text-gray-100"
-      style={{
-        background: "linear-gradient(to bottom right, rgb(0,255,255), #1f2937, rgb(0,255,255))",
-      }}
+      className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white"
+     
     >
       <Navbar />
 
@@ -124,7 +122,7 @@ export default function ProjectsPage() {
             </div>
 
             <h1
-              className="text-6xl font-bold mb-4 text-white text-center bg-clip-text text-transparent"
+              className="text-6xl font-bold mb-4 text-white text-center bg-clip-text "
               style={{ backgroundImage: "linear-gradient(to right, white, rgb(0,255,255))" }}
             >
               Electronics Club
@@ -147,7 +145,7 @@ export default function ProjectsPage() {
                 style={{ backgroundColor: "rgba(0,255,255,0.1)", borderColor: "rgba(0,255,255,0.2)" }}
               >
                 <Zap className="h-4 w-4" style={{ color: "rgb(0,255,255)" }} />
-                <span className="text-sm" style={{ color: "white" }}>20+ Active Projects</span>
+                <span className="text-sm" style={{ color: "rgb(0,255,255)" }}>20+ Active Projects</span>
               </div>
               <div
                 className="flex items-center gap-2 backdrop-blur-sm px-4 py-2 rounded-full border"
@@ -196,53 +194,50 @@ function ProjectCard({ project }) {
   return (
     <div
       ref={cardRef}
-      className="perspective-1000 group"
+      className="perspective-1000 group max-w-sm mx-auto"
       onMouseMove={handleMouseMove}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={resetRotation}
     >
       <div
-        className="bg-gray-900/90 backdrop-blur-sm rounded-2xl overflow-hidden transition-all duration-300 transform-gpu border"
+        className="rounded-3xl overflow-hidden transition-all duration-300 transform-gpu border shadow-xl"
         style={{
           transform: isHovered
-            ? `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale3d(1.02, 1.02, 1.02)`
+            ? `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale3d(1.03, 1.03, 1.03)`
             : "rotateX(0) rotateY(0) scale3d(1, 1, 1)",
           transition: "transform 0.3s ease, box-shadow 0.3s ease",
-          boxShadow: isHovered ? "0 10px 25px rgba(0,255,255,0.2)" : "0 5px 10px rgba(0,0,0,0.2)",
-          background:
-            "linear-gradient(to bottom right, rgba(0,255,255, 0.7), rgba(17, 24, 39, 0.9), rgba(0,255,255, 0.7))",
-          borderColor: "rgba(0,255,255,0.3)",
+          boxShadow: isHovered
+            ? "0 12px 30px rgba(0,255,255,0.25)"
+            : "0 6px 16px rgba(0,0,0,0.25)",
+          background: "linear-gradient(to bottom right, #0f172a, #0e2a2e)",
+          borderColor: "rgba(0,255,255,0.2)",
         }}
       >
         <div className="relative">
-          <div className="w-full h-[200px] overflow-hidden">
+          <div className="w-full h-[180px] overflow-hidden">
             <img
               src={project.image || "/placeholder.svg?height=200&width=320"}
               alt={project.title}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />
           </div>
-          <div className="absolute top-3 right-3 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium border"
-            style={{ color: "rgb(0,255,255)", borderColor: "rgba(0,255,255,0.2)" }}>
+          <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium border"
+            style={{ color: "white", borderColor: "rgba(0,255,255,0.3)" }}>
             {project.category}
           </div>
         </div>
-        <div className="p-6 relative">
-          <h3 className="text-2xl font-semibold text-white mb-2">{project.title}</h3>
-          <p className="text-gray-300 mb-4">{project.description}</p>
+        <div className="p-5">
+          <h3 className="text-xl font-semibold text-white mb-1">{project.title}</h3>
+          <p className="text-gray-300 text-sm mb-3">{project.description}</p>
 
-          <div className="flex flex-wrap gap-2 mb-5">
-            <div
-              className="flex items-center gap-1.5 backdrop-blur-sm px-2 py-1 rounded-md text-xs border"
-              style={{ color: "rgb(0,255,255)", backgroundColor: "rgba(0,255,255,0.1)", borderColor: "rgba(0,255,255,0.2)" }}
-            >
+          <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex items-center gap-1.5 px-2 py-1 rounded-md text-xs border"
+              style={{ color: "text-cyan-400", backgroundColor: "rgba(0,255,255,0.08)", borderColor: "rgba(0,255,255,0.2)" }}>
               <Calendar className="h-3 w-3" />
               {project.date}
             </div>
-            <div
-              className="flex items-center gap-1.5 backdrop-blur-sm px-2 py-1 rounded-md text-xs border"
-              style={{ color: "rgb(0,255,255)", backgroundColor: "rgba(0,255,255,0.1)", borderColor: "rgba(0,255,255,0.2)" }}
-            >
+            <div className="flex items-center gap-1.5 px-2 py-1 rounded-md text-xs border"
+              style={{ color: "rgb(0,255,255)", backgroundColor: "rgba(0,255,255,0.08)", borderColor: "rgba(0,255,255,0.2)" }}>
               <Users className="h-3 w-3" />
               {project.members.length} members
             </div>
@@ -250,7 +245,7 @@ function ProjectCard({ project }) {
 
           <a
             href="#"
-            className="inline-flex items-center transition-colors font-medium group-hover:underline"
+            className="inline-flex items-center font-medium text-sm hover:underline"
             style={{ color: "white" }}
           >
             Visit Project <ExternalLink className="h-4 w-4 ml-1" />
