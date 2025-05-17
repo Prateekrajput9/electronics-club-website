@@ -7,11 +7,13 @@ const Navbar = () => {
   console.log(location);
   const navItems = [
     "Home",
+    "About us",
     "Blogs",
     "Projects",
     "Team",
-    "About us",
+    
     "Contact Us",
+    "workshop",
   ];
 
   return (

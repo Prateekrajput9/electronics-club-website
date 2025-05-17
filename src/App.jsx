@@ -4,16 +4,18 @@ import HomePage from "./pages/Homepage";
 import TeamPage from "./pages/Team";
 import ProjectCard from "./pages/Projects";
 import Blogs from "./pages/Blogs";
-
+import WorkshopForm from "./pages/workshop";
 function App() {
   return (
     <>
       <ParticlesComponent />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/team" element={<TeamPage />} />
         <Route path="/projects" element={<ProjectCard />} />
         <Route path="/blogs" element={<Blogs />} />
+    <Route path="/workshop" element={<WorkshopForm />} />
       </Routes>
     </>
   );
