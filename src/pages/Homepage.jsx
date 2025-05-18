@@ -1,6 +1,8 @@
 import { FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import ParticlesComponent from "../components/background";
+import AboutUs from "./AboutUs"; 
+
 const HomePage = () => {
   return (
     <div className="relative min-h-screen w-full overflow-hidden text-white">
@@ -52,6 +54,7 @@ const HomePage = () => {
         </a>
       </div>
     </div>
+    
   );
 };
 
