@@ -1,7 +1,7 @@
 import { FaLinkedin, FaTwitter, FaInstagram, FaFacebook } from "react-icons/fa";
 import Navbar from "../components/Navbar";
 import ParticlesComponent from "../components/background";
-import AboutUs from "/Users/aniket/electronics-club-website/src/pages/AboutUs.jsx"; 
+import AboutUs from "./AboutUs"; 
 
 const HomePage = () => {
   return (

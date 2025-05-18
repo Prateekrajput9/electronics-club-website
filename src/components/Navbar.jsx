@@ -13,7 +13,7 @@ const Navbar = () => {
     "Team",
     
     "Contact Us",
-    "workshop",
+    "Workshop",
   ];
 
   return (
