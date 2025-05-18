@@ -6,6 +6,7 @@ import ProjectCard from "./pages/Projects";
 import Blogs from "./pages/Blogs";
 import WorkshopForm from "./pages/workshop";
 import ProjectDetails from "./pages/ProjectDetails";
+import AboutUs from "./pages/AboutUs";
 function App() {
   return (
     <>
@@ -16,6 +17,7 @@ function App() {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/projects" element={<ProjectCard />} />
         <Route path = "/projects/:id" element={<ProjectDetails />} />
+        <Route path="/About us" element={<AboutUs />} />
         <Route path="/blogs" element={<Blogs />} />
          <Route path="*" element={<HomePage />} />
     <Route path="/workshop" element={<WorkshopForm />} />
