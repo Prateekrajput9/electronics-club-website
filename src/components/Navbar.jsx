@@ -43,9 +43,9 @@ const Navbar = () => {
           </nav>
 
           {/* Right Icon */}
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <UserCircle className="text-white h-8 w-8" />
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
