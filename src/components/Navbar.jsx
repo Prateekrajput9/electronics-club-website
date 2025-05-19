@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { UserCircle } from "lucide-react";
-
+import logo from "../assets/logo.png";
 const Navbar = () => {
   const location = useLocation().pathname.split("/")[1];
   console.log(location);
@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Left Logo */}
           <div className="flex-shrink-0">
-            <img className="h-10" src="/logo.png" alt="Ee club logo" />
+            <img className="h-10" src={logo} alt="Ee club logo" />
           </div>
 
           {/* Center Nav */}
