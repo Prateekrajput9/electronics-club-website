@@ -11,7 +11,7 @@ const ContactUs = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm sm:text-base bg-gray-900 p-6 rounded-2xl shadow-lg">
           <div className="flex items-center space-x-3">
             <User className="text-cyan-400" size={20} />
-            <span>Name: <span className="text-gray-300">Advay kunte(Head)</span></span>
+            <span>President: <span className="text-gray-300">Advay kunte</span></span>
           </div>
           <div className="flex items-center space-x-3">
             <Mail className="text-cyan-400" size={20} />
@@ -38,6 +38,7 @@ const ContactUs = () => {
           action="https://formspree.io/f/mdkgjkqk"
           method="POST"
           className="space-y-6"
+          target='blank'
         >
           <div>
             <label className="block text-sm font-medium text-gray-300">Name</label>

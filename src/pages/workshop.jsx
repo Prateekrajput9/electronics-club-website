@@ -57,21 +57,21 @@ const Workshops = () => {
       <div className="min-h-screen bg-gradient-to-b from-[#0a1828] via-[#10172a] to-[#1a2235] p-8">
         <div className="min-h-[250px] mt-10 flex flex-col justify-center items-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            <span className="text-cyan-400">Workshops</span>
+            <span className="text-cyan-400">Events</span>
           </h1>
         </div>
 
         {/* Upcoming Workshops */}
         <section className="mb-10">
           <h2 className="text-2xl font-semibold mb-4 text-cyan-200">
-            📅 Upcoming Workshops
+            📅 Upcoming Events
           </h2>
           {loading ? (
             <div className="text-cyan-100">Loading...</div>
           ) : (
             <div className="grid md:grid-cols-2 gap-6">
               {upcomingWorkshops.length === 0 ? (
-                <div className="text-cyan-100">No upcoming workshops.</div>
+                <div className="text-cyan-100">No upcoming events.</div>
               ) : (
                 upcomingWorkshops.map((workshop) => (
                   <div
@@ -86,6 +86,7 @@ const Workshops = () => {
                     {workshop.registerLink && (
                       <Link
                         to={workshop.registerLink}
+                        target="blank"
                         className="inline-block mt-4 bg-cyan-400 text-[#0a1828] font-semibold px-4 py-2 rounded hover:bg-cyan-300 transition"
                       >
                         Register
@@ -101,7 +102,7 @@ const Workshops = () => {
         {/* Previous Workshops */}
         <section>
           <h2 className="text-2xl font-semibold mb-4 text-cyan-200">
-            📜 Previous Workshops
+            📜 Previous Events
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             {previousWorkshops.map((workshop) => (
