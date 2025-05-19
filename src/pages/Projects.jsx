@@ -21,7 +21,8 @@ export default function ProjectsPage() {
     {
       id: "1",
       title: "Smart Home Automation System",
-      description: "A comprehensive IoT-based system for controlling home appliances using Arduino and ESP8266.",
+      description:
+        "A comprehensive IoT-based system for controlling home appliances using Arduino and ESP8266.",
       image: "/placeholder.svg?height=200&width=320",
       category: "iot",
       members: ["Rahul Sharma", "Priya Patel"],
@@ -52,7 +53,8 @@ export default function ProjectsPage() {
     {
       id: "4",
       title: "Digital Signal Processing Module",
-      description: "A DSP module for real-time audio processing using FPGA implementation.",
+      description:
+        "A DSP module for real-time audio processing using FPGA implementation.",
       image:
         "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
       category: "signal",
@@ -93,14 +95,18 @@ export default function ProjectsPage() {
             className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full blur-[100px]"
             style={{
               backgroundColor: "rgb(0,255,255)",
-              transform: `translate(${mousePosition.x * 0.02}px, ${mousePosition.y * 0.02}px)`,
+              transform: `translate(${mousePosition.x * 0.02}px, ${
+                mousePosition.y * 0.02
+              }px)`,
             }}
           ></div>
           <div
             className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full blur-[120px]"
             style={{
               backgroundColor: "rgb(0,255,255)",
-              transform: `translate(${-mousePosition.x * 0.01}px, ${-mousePosition.y * 0.01}px)`,
+              transform: `translate(${-mousePosition.x * 0.01}px, ${
+                -mousePosition.y * 0.01
+              }px)`,
             }}
           ></div>
         </div>
@@ -117,7 +123,7 @@ export default function ProjectsPage() {
             style={{ backgroundColor: "rgba(0,255,255,0.1)" }}
           ></div>
 
-          <div className="relative z-10 flex flex-col items-center">
+          <div className="relative min-h-[450px] justify-center z-10 flex flex-col items-center">
             <div
               className="mt-8 mb-8 inline-flex items-center justify-center p-2 rounded-full border"
               style={{
@@ -128,37 +134,39 @@ export default function ProjectsPage() {
               <div
                 className="p-3 rounded-full"
                 style={{
-                  background: "linear-gradient(to bottom right, rgb(0,255,255), rgb(0,255,255))",
+                  background:
+                    "linear-gradient(to bottom right, rgb(0,255,255), rgb(0,255,255))",
                 }}
               >
                 <Cpu className="h-8 w-8 text-white" />
               </div>
             </div>
 
-            <h1
-              className="text-6xl font-bold mb-4 text-white text-center bg-clip-text"
-              style={{ backgroundImage: "linear-gradient(to right, white, rgb(0,255,255))" }}
-            >
-              Electronics Club
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">
+              Electronics <span className="text-cyan-400">Club</span>
             </h1>
 
             <div
               className="h-1 w-20 rounded-full mb-6"
               style={{
-                background: "linear-gradient(to right, rgb(0,255,255), rgb(0,255,255))",
+                background:
+                  "linear-gradient(to right, rgb(0,255,255), rgb(0,255,255))",
               }}
             ></div>
 
-            <h2 className="text-2xl font-light mb-4" style={{ color: "rgb(0,255,255)" }}>
+            <h2
+              className="text-2xl font-light mb-4"
+              style={{ color: "rgb(0,255,255)" }}
+            >
               IIT Indore
             </h2>
 
             <p className="text-lg text-gray-300 max-w-2xl mx-auto text-center mb-8">
-              Showcasing innovative projects created by our talented members, pushing the boundaries of electronics and
-              technology.
+              Showcasing innovative projects created by our talented members,
+              pushing the boundaries of electronics and technology.
             </p>
 
-            <div className="flex gap-4 mb-10">
+            <div className="flex gap-4">
               <div
                 className="flex items-center gap-2 backdrop-blur-sm px-4 py-2 rounded-full border"
                 style={{
@@ -258,7 +266,9 @@ function ProjectCard({ project }) {
           </div>
         </div>
         <div className="p-5">
-          <h3 className="text-xl font-semibold text-white mb-1">{project.title}</h3>
+          <h3 className="text-xl font-semibold text-white mb-1">
+            {project.title}
+          </h3>
           <p className="text-gray-300 text-sm mb-3">{project.description}</p>
 
           <div className="flex flex-wrap gap-2 mb-4">

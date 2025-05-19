@@ -1,6 +1,6 @@
-import React from "react";
-import Navbar from "../components/Navbar"; 
+import Navbar from "../components/Navbar";
 import image1 from "../assets/background.jpg";
+
 const AboutUs = () => {
   return (
     <>
@@ -34,11 +34,12 @@ const AboutUs = () => {
         }
       `}</style>
 
-      <div className="min-h-screen bg-gradient-to-b from-[#0a1828] via-[#10172a] to-[#1a2235] p-8">
-        <h1 className="text-3xl font-extrabold text-center text-cyan-300 mb-6 mt-20 drop-shadow-lg">
-      
-        </h1>
-
+      <div className="min-h-screen bg-gradient-to-b from-[#0a1828] via-[#10172a] to-[#1a2235] text-white p-8">
+        <div className="min-h-[250px] mt-10 flex flex-col justify-center items-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            About <span className="text-cyan-400">Us</span>
+          </h1>
+        </div>
         <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
           <div className="w-full md:w-1/3">
             <img
@@ -49,14 +50,17 @@ const AboutUs = () => {
           </div>
 
           <div className="w-full md:w-1/2 text-center md:text-left">
-            <div className="title">
-              {/* This h2 will have the animated CSS effect */}
-              <h2 className="text-4xl md:text-6xl font-semibold text-cyan-900 mb-4">
-            About Us
-              </h2>
-            </div>
-            <p className="text-lg text-white leading-relaxed pt-10">
-              Students studying electrical engineering are represented by the Electrical Engineering Students Association (EESA). Our primary goal is to establish connections between the Electrical Department's instructors, students, and alumni. Overall, EESA serves as a link between them. It is an organization among the students, for the students. We hold treks, cultural events, traditional nights, talk shows, seminars, and other activities to accomplish our goal. We also provide blogs on everything our students need, including internships, placements, and more education.
+            <p className="text-lg text-white leading-relaxed">
+              Students studying electrical engineering are represented by the
+              Electrical Engineering Students Association (EESA). Our primary
+              goal is to establish connections between the Electrical
+              Department's instructors, students, and alumni. Overall, EESA
+              serves as a link between them. It is an organization among the
+              students, for the students. We hold treks, cultural events,
+              traditional nights, talk shows, seminars, and other activities to
+              accomplish our goal. We also provide blogs on everything our
+              students need, including internships, placements, and more
+              education.
             </p>
           </div>
         </div>

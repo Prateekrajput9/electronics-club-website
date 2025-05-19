@@ -20,13 +20,15 @@ export default function Blogs() {
       <Navbar />
       <div className="relative pt-16 pb-10 px-4 sm:px-6 lg:px-8">
         <section className="pt-24 text-center">
-          <h1 className="text-cyan-400 text-4xl md:text-5xl font-bold">
-            Blogs
-          </h1>
-          <p className="text-xl mt-4 text-gray-300 max-w-3xl mx-auto">
-            Deep dives, practical guides, and fresh perspectives—crafted to fuel
-            your curiosity and creativity.
-          </p>
+          <div className="min-h-[250px]">
+            <h1 className="text-cyan-400 text-4xl md:text-5xl font-bold">
+              Blogs
+            </h1>
+            <p className="text-xl mt-8 text-gray-300 max-w-3xl mx-auto">
+              Deep dives, practical guides, and fresh perspectives—crafted to
+              fuel your curiosity and creativity.
+            </p>
+          </div>
           <div
             className="mt-10 grid gap-5"
             style={{
