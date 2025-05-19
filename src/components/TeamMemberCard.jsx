@@ -9,7 +9,7 @@ const TeamMemberCard = ({ member }) => {
             {/* Image */}
             <div className="w-28 h-28 mx-auto mb-4 overflow-hidden rounded-full border-2 border-cyan-400">
               <img
-                src={member.image}
+                src={`/member_images/${member.name}.jpeg`}
                 alt={member.name}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
