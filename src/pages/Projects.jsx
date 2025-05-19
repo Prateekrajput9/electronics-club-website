@@ -18,72 +18,187 @@ export default function ProjectsPage() {
   }, []);
 
   const projects = [
-    {
-      id: "1",
-      title: "Smart Home Automation System",
-      description:
-        "A comprehensive IoT-based system for controlling home appliances using Arduino and ESP8266.",
-      image: "/placeholder.svg?height=200&width=320",
-      category: "iot",
-      members: ["Rahul Sharma", "Priya Patel"],
-      date: "March 2023",
-    },
-    {
-      id: "2",
-      title: "Gesture Controlled Robot",
-      description:
-        "A robot that can be controlled using hand gestures captured by a camera and processed using OpenCV.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1677269465314-d5d2247a0b0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cm9ib3R8ZW58MHx8MHx8fDA%3D",
-      category: "robotics",
-      members: ["Amit Kumar", "Sneha Gupta"],
-      date: "November 2022",
-    },
-    {
-      id: "3",
-      title: "Solar Powered Weather Station",
-      description:
-        "A self-sustaining weather monitoring system powered by solar energy with data logging capabilities.",
-      image:
-        "https://images.unsplash.com/photo-1655393001768-d946c97d6fd1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
-      category: "renewable",
-      members: ["Vikram Singh", "Neha Joshi"],
-      date: "January 2023",
-    },
-    {
-      id: "4",
-      title: "Digital Signal Processing Module",
-      description:
-        "A DSP module for real-time audio processing using FPGA implementation.",
-      image:
-        "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
-      category: "signal",
-      members: ["Arjun Reddy", "Meera Desai"],
-      date: "April 2023",
-    },
-    {
-      id: "5",
-      title: "Autonomous Drone Navigation",
-      description:
-        "A drone that can navigate through obstacles using computer vision and machine learning algorithms.",
-      image:
-        "https://images.unsplash.com/photo-1605493624455-a56d6d312f6f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHJvYm90aWNzfGVufDB8fDB8fHww",
-      category: "robotics",
-      members: ["Karan Malhotra", "Ananya Sharma"],
-      date: "February 2023",
-    },
-    {
-      id: "6",
-      title: "PCB Design Workshop Materials",
-      description:
-        "Educational resources and designs created for the PCB design workshop conducted for first-year students.",
-      image:
-        "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
-      category: "education",
-      members: ["Dr. Rajesh Kumar", "Sanjay Verma"],
-      date: "December 2022",
-    },
-  ];
+  {
+    id: "1",
+    title: "Virtual Piano",
+    description: "A virtual piano using Arduino UNO R3 that produces different musical notes based on the distance of fingertips from an ultrasonic sensor.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "music",
+    members: ["Vaidik Shah", "Aryan jain", "bhavya ranka", "parekh om nirav"],
+    date: "2024",
+  },
+  {
+    id: "2",
+    title: "BT Speaker",
+    description: "ESP32 Bluetooth Audio Receiver with OLED Display that receives audio via Bluetooth A2DP and displays song metadata.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "audio",
+    members: ["adithya g", "adharsh gopalakrishnan", "arnav kumar", "guru pranav"],
+    date: "2024",
+  },
+  {
+    id: "3",
+    title: "Home Automation",
+    description: "A home automation system project.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "IoT",
+    members: ["manthan gupta", "bhasuru nikhil", "ashmita sharma"],
+    date: "2024",
+  },
+  {
+    id: "4",
+    title: "Safe Beats",
+    description: "A project focused on safe beats technology.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "health",
+    members: ["digvijay pundir", "aditya saboo", "harshitkumar singh", "devansh chaudhary", "abhishek mehta"],
+    date: "2024",
+  },
+  {
+    id: "5",
+    title: "LED Game",
+    description: "A game project using LED technology.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "game",
+    members: ["karan hitesh bagthariya", "yash modi", "ninad kulkarni", "vaibhav, sharma", "viraj patel"],
+    date: "2024",
+  },
+  {
+    id: "6",
+    title: "Stroboscope",
+    description: "A stroboscope project. It is a great project",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "electronics",
+    members: ["prashant narang", "poorna sai reddy", "prem pratik"],
+    date: "2024",
+  },
+  {
+    id: "7",
+    title: "EVM",
+    description: "Electronic Voting Machine implementation using FPGA and Verilog.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "electronics",
+    members: ["prabhat sati", "himesh jha", "vansh sabharwal", "naman goyal", "sarvadyee ghoghare", "vaidehi bhat", "advay kunte", "samruddhee jadhav"],
+    date: "2024",
+  },
+  {
+    id: "8",
+    title: "Arduino Based Games",
+    description: "Collection of games implemented on Arduino platform.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "game",
+    members: ["priyanshi mahto", "nagalla abhisri karthik", "arjun dhamdhere", "dhananjay dhumal"],
+    date: "2024",
+  },
+  {
+    id: "9",
+    title: "Digital Clock",
+    description: "A digital clock implementation project.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "electronics",
+    members: ["nitin mewara", "daksh chandel", "harshal rudraksha", "aniket goyal"],
+    date: "2024",
+  },
+  {
+    id: "10",
+    title: "Irrigation System",
+    description: "Smart irrigation system for automated plant watering.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "IoT",
+    members: ["varad gaekwad", "sharik mansoori", "vaidehi bhat"],
+    date: "2024",
+  },
+  {
+    id: "11",
+    title: "Edge AI",
+    description: "Implementation of AI algorithms on edge devices.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "AI",
+    members: ["bhavya ranka", "vaidik shah", "aryan jain", "yash modi", "ninad kulkarni", "ashmita sharma", "arnav kumar", "prem pratik", "mihir", "varad gaekwad"],
+    date: "2025",
+  },
+  {
+    id: "12",
+    title: "Neural Nets Processor Design",
+    description: "CORDIC-based neural network accelerator design.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "AI",
+    members: ["advay kunte", "prabhat sati", "vaidehi bhat"],
+    date: "2025",
+  },
+  {
+    id: "13",
+    title: "Cluster Computing",
+    description: "Implementation of a cluster computing system.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "computing",
+    members: ["Manthan Gupta", "Harshitkumar Singh", "Digvijay Singh Pundir", "Parekh Om Nirav", "Karan Hitesh Bagthariya", "Priyanshi Mahto", "Nagalla Abhisri Karthik", "Managari Saatvik", "Vaibhav Sharma", "Viraj Samir Patel"],
+    date: "2025",
+  },
+  {
+    id: "14",
+    title: "Cryptography (Ascon Cipher)",
+    description: "Implementation of Ascon cipher cryptography.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "security",
+    members: ["vansh sabharwal", "poorna sai reddy", "harshal rudraksh", "venepally sathwika", "arihant bhandari", "yama akshay", "bhaskar", "hilori jain", "atharvakant chandorikar"],
+    date: "2025",
+  },
+  {
+    id: "15",
+    title: "ANC",
+    description: "Active Noise Cancellation project.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "audio",
+    members: ["Adithya G", "Devansh Chaudhary", "Abhishek Mehta", "M Sai Krishna", "Aditya Saboo", "Adharsh Gopalakrishnan", "Praneeth K.S.S"],
+    date: "2025",
+  },
+  {
+    id: "16",
+    title: "Morse Code",
+    description: "Implementation of morse code communication protocol.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "communication",
+    members: ["bhasuru nikhil", "arjun dhamdhere", "shanajay dhumal"],
+    date: "2025",
+  },
+  {
+    id: "17",
+    title: "MIDI Synthesizer",
+    description: "Development of a MIDI synthesizer for music production.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "music",
+    members: ["nishit rupavatia", "prashant narang", "samruddhee jadhav"],
+    date: "2025",
+  },
+  {
+    id: "18",
+    title: "Analog Calculator",
+    description: "Development of an analog calculator system.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "electronics",
+    members: ["varad gaekwad", "sharik mansoori", "naman goyal", "sarvadnyee ghoghare", "himesh jha", "yash shrivastava"],
+    date: "2025",
+  },
+  {
+    id: "19",
+    title: "Microcontroller Development",
+    description: "Development of a RISC-V 32-bit microprocessor.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "computing",
+    members: ["nitin mewara", "daksh chandel", "kuvam bhutani", "aniket goyal"],
+    date: "2025",
+  },
+  {
+    id: "20",
+    title: "8-bit Computer",
+    description: "Implementation of an 8-bit breadboard computer.",
+    image: "/placeholder.svg?height=300&width=500",
+    category: "computing",
+    members: ["praneeth karri"],
+    date: "Past Years",
+  },
+];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
@@ -143,7 +258,7 @@ export default function ProjectsPage() {
             </div>
 
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Electronics <span className="text-cyan-400">Club</span>
+              Our <span className="text-cyan-400">Projects</span>
             </h1>
 
             <div
