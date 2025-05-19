@@ -1,13 +1,9 @@
-import React from "react";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 const TeamMemberCard = ({ member }) => {
   return (
     <div className="relative group">
-      <div
-        className="h-full overflow-hidden rounded-lg bg-black/40 backdrop-blur-sm border border-gray-800 transition-all duration-300 
-                    group-hover:scale-[1.02] group-hover:shadow-lg group-hover:shadow-cyan-500/20"
-      >
+      <div className="h-full overflow-hidden rounded-lg bg-black/40 backdrop-blur-sm border border-gray-800 transition-all duration-300 group-hover:scale-[1.02] group-hover:shadow-lg group-hover:shadow-cyan-500/20">
         <div className="p-5 flex flex-col h-full">
           <div className="flex-1">
             {/* Image */}
@@ -30,6 +26,12 @@ const TeamMemberCard = ({ member }) => {
             {member.department && (
               <p className="text-gray-300 text-sm text-center mb-4">
                 {member.department}
+              </p>
+            )}
+            
+            {member.tagline && (
+              <p className="text-gray-400 italic text-sm text-center mb-4">
+                "{member.tagline.toUpperCase()}"
               </p>
             )}
           </div>
