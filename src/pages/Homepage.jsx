@@ -4,9 +4,11 @@ import Navbar from "../components/Navbar";
 import ParticlesComponent from "../components/background";
 import AboutUs from "./AboutUs";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setIsVisible(true);
@@ -38,10 +40,16 @@ const HomePage = () => {
           
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all hover:scale-105 shadow-lg shadow-cyan-500/20">
-             Contact US
+            <button 
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-3 px-8 rounded-full transition-all hover:scale-105 shadow-lg shadow-cyan-500/20"
+              onClick={() => navigate("/contact us")}
+            >
+              Contact US
             </button>
-            <button className="bg-transparent border-2 border-white/30 hover:border-white text-white font-bold py-3 px-8 rounded-full transition-all hover:scale-105 backdrop-blur-sm">
+            <button 
+              className="bg-transparent border-2 border-white/30 hover:border-white text-white font-bold py-3 px-8 rounded-full transition-all hover:scale-105 backdrop-blur-sm"
+              onClick={() => navigate("/projects")}
+            >
               Explore Projects
             </button>
           </div>
@@ -63,12 +71,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Scroll Down Indicator */}
-      {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-30">
-        <FaArrowDown className="text-cyan-400 h-6 w-6" />
-        <span className="text-sm text-cyan-400 block mt-2">Scroll Down</span>
-      </div> */}
-
+ 
       {/* Social Icons - Right Side */}
       <div className="absolute top-1/3 right-4 flex flex-col gap-4 text-white z-50 bg-black/25 backdrop-blur-md p-6 rounded-2xl border border-white/10">
         <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">
