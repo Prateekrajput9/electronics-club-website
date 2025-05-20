@@ -86,7 +86,7 @@ const TeamsPage = () => {
       {/* Join the Team Section */}
       <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/40 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
-          <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
+          {/* <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
             Passionate about electronics and innovation? We're always looking
             for talented individuals to join our club.
@@ -96,7 +96,7 @@ const TeamsPage = () => {
             className="inline-block bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-3 px-6 rounded-lg transition-colors"
           >
             Get in Touch
-          </a>
+          </a> */}
         </div>
       </div>
     </div>

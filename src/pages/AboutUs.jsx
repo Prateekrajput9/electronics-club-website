@@ -79,18 +79,10 @@ const AboutUs = () => {
 
           <div className="w-full lg:w-3/5 text-center lg:text-left mt-6 lg:mt-0">
             <p className="text-base sm:text-lg text-white/90 leading-relaxed mb-4 sm:mb-6 px-2 sm:px-0">
-              Students studying electrical engineering are represented by the
-              Electrical Engineering Students Association (EESA). Our primary
-              goal is to establish connections between the Electrical
-              Department's instructors, students, and alumni. Overall, EESA
-              serves as a link between them.
+             The Electronics club of IIT Indore is motley of electronics fanatics. It caters the need of providing a platform which can expose individuals to the ever fascinating field of electronics. Our aim is to create an atmosphere conducive for this subject and assist students in bridging the gap between theory and practical. 
             </p>
             <p className="text-base sm:text-lg text-white/90 leading-relaxed mb-6 sm:mb-8 px-2 sm:px-0">
-              It is an organization among the students, for the students. We hold treks, cultural events,
-              traditional nights, talk shows, seminars, and other activities to
-              accomplish our goal. We also provide blogs on everything our
-              students need, including internships, placements, and more
-              education.
+             Keeping this in mind, we conduct lecture series, workshops, seminars and competitions. Along with theory sessions, we provide students hands on experience and chance to see the concepts working in reality. This motivates the students to think about innovations and create new wonders on their own. We take up projects which are intriguing and form the latest trends in the fields of electronics. We aim at preparing students to participate in various competitions as well.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
