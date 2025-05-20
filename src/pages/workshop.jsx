@@ -52,31 +52,31 @@ const Workshops = () => {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen bg-gradient-to-b from-[#0a1828] via-[#10172a] to-[#1a2235] p-8">
-        <div className="min-h-[250px] mt-10 flex flex-col justify-center items-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+      <div className="min-h-screen bg-gradient-to-b from-[#0a1828] via-[#10172a] to-[#1a2235] p-4 sm:p-6 md:p-8">
+        <div className="min-h-[200px] sm:min-h-[250px] mt-6 sm:mt-10 flex flex-col justify-center items-center">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             <span className="text-cyan-400">Events</span>
           </h1>
         </div>
 
         {/* Upcoming Workshops */}
-        <section className="mb-10">
-          <h2 className="text-2xl font-semibold mb-4 text-cyan-200">
+        <section className="mb-8 sm:mb-10">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-cyan-200">
             📅 Upcoming Events
           </h2>
           {loading ? (
             <div className="text-cyan-100">Loading...</div>
           ) : (
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               {upcomingWorkshops.length === 0 ? (
                 <div className="text-cyan-100">No upcoming events.</div>
               ) : (
                 upcomingWorkshops.map((workshop) => (
                   <div
                     key={workshop.id || workshop.title + workshop.date}
-                    className="bg-[#182238] p-6 rounded-xl shadow-lg hover:shadow-cyan-400/30 transition border border-cyan-900"
+                    className="bg-[#182238] p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-cyan-400/30 transition border border-cyan-900"
                   >
-                    <h3 className="text-xl font-bold text-cyan-300">
+                    <h3 className="text-lg sm:text-xl font-bold text-cyan-300">
                       {workshop.title}
                     </h3>
                     <p className="text-cyan-100">{workshop.date}</p>
@@ -100,16 +100,16 @@ const Workshops = () => {
 
         {/* Previous Workshops */}
         <section>
-          <h2 className="text-2xl font-semibold mb-4 text-cyan-200">
+          <h2 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4 text-cyan-200">
             📜 Previous Events
           </h2>
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             {previousWorkshops.map((workshop) => (
               <div
                 key={workshop.id}
-                className="bg-[#141b29] p-6 rounded-xl shadow hover:shadow-cyan-300/20 border border-cyan-900"
+                className="bg-[#141b29] p-4 sm:p-6 rounded-xl shadow hover:shadow-cyan-300/20 border border-cyan-900"
               >
-                <h3 className="text-xl font-bold text-cyan-200">
+                <h3 className="text-lg sm:text-xl font-bold text-cyan-200">
                   {workshop.title}
                 </h3>
                 <p className="text-cyan-400">{workshop.date}</p>

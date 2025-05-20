@@ -12,7 +12,7 @@ import ContactUs from "./pages/contactus";
 function App() {
   return (
     <>
-      <ParticlesComponent />
+      {/* <ParticlesComponent /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />

@@ -291,4 +291,14 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
     tagline: "Pixels meet perfect logic",
   },
+   {
+    id: 30,
+    name: "Prateek",
+    position: "Web dev Head",
+    department: "Web Dev",
+    email: "ee230002065@iiti.ac.in",
+    github: "https://github.com/SarvadnyeeGhogare",
+    linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
+    tagline: "Do or Die",
+  },
 ];
