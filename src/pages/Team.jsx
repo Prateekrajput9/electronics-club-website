@@ -4,16 +4,16 @@ import TeamMemberCard from "../components/TeamMemberCard";
 import { teamMembers } from "../data/members";
 
 const TeamsPage = () => {
-  const [selectedDepartment, setSelectedDepartment] = useState(null);
+  const [selectedPosition, setSelectedPosition] = useState(null);
 
   // Get unique departments
-  const departments = Array.from(
-    new Set(teamMembers.map((member) => member.department))
+  const positions = Array.from(
+    new Set(teamMembers.map((member) => member.position))
   );
 
   // Filter members based on selected department
-  const filteredMembers = selectedDepartment
-    ? teamMembers.filter((member) => member.department === selectedDepartment)
+  const filteredMembers = selectedPosition
+    ? teamMembers.filter((member) => member.position === selectedPosition)
     : teamMembers;
 
   return (
@@ -36,10 +36,10 @@ const TeamsPage = () => {
           {/* Department Filter */}
           <div className="mt-10 flex flex-wrap justify-center gap-3">
             <button
-              onClick={() => setSelectedDepartment(null)}
+              onClick={() => setSelectedPosition(null)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all
                 ${
-                  !selectedDepartment
+                  !selectedPosition
                     ? "bg-cyan-500 text-white"
                     : "bg-gray-800 text-gray-300 hover:bg-gray-700"
                 }`}
@@ -47,18 +47,18 @@ const TeamsPage = () => {
               All
             </button>
 
-            {departments.map((department) => (
+            {positions.map((position) => (
               <button
-                key={department}
-                onClick={() => setSelectedDepartment(department)}
+                key={position}
+                onClick={() => setSelectedPosition(position)}
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all
                   ${
-                    selectedDepartment === department
+                    selectedPosition === position
                       ? "bg-cyan-500 text-white"
                       : "bg-gray-800 text-gray-300 hover:bg-gray-700"
                   }`}
               >
-                {department}
+                {position}
               </button>
             ))}
           </div>

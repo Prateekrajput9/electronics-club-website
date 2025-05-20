@@ -22,12 +22,6 @@ const TeamMemberCard = ({ member }) => {
             <p className="text-cyan-400 text-center font-medium mb-3">
               {member.position}
             </p>
-
-            {member.department && (
-              <p className="text-gray-300 text-sm text-center mb-4">
-                {member.department}
-              </p>
-            )}
             
             {member.tagline && (
               <p className="text-gray-400 italic text-sm text-center mb-4">
