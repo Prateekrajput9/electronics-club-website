@@ -2,7 +2,7 @@ export const teamMembers = [
   {
     name: "Varad Gaekwad",
     position: "Co-Head",
-
+    department: "Heads",
     email: "ee230002081@iiti.ac.in",
     github: "https://github.com/Varad-22",
     linkedin: "https://www.linkedin.com/in/varad-gaekwad-a23b5927b/",
@@ -12,7 +12,7 @@ export const teamMembers = [
   {
     name: "Parekh Om Nirav",
     position: "Head of Logistics",
-
+    department: "Heads",
     email: "ee240002049@iiti.ac.in",
     github: "https://github.com/Om1903",
     linkedin: "https://www.linkedin.com/in/om-parekh-52123a219/",
@@ -23,7 +23,7 @@ export const teamMembers = [
   {
     name: "Viraj Samir Patel",
     position: "Head of Outreach and Social Media",
-
+    department: "Heads",
     email: "ee240002079@iiti.ac.in",
     github: "VirajP-18",
     linkedin: "viraj-patel-5a3229330",
@@ -33,7 +33,7 @@ export const teamMembers = [
   {
     name: "Ashmita Sharma",
     position: "Head of Design",
-
+    department: "Heads",
     email: "ee240002013@iiti.ac.in",
     github: "https://github.com/",
     linkedin: "https://www.linkedin.com/in/ashmita-sharma-747009319/",
@@ -43,7 +43,7 @@ export const teamMembers = [
   {
     name: "Advay Kunte",
     position: "Club Head",
-
+    department: "Heads",
     email: "ee230002007@iiti.ac.in",
     github: "AdvayKunte",
     linkedin: "https://www.linkedin.com/in/advay-kunte/",
@@ -53,7 +53,7 @@ export const teamMembers = [
   {
     name: "Pulkit Navnit Gupta",
     position: "Ex-Club Head",
-
+    department: "Heads",
     email: "ee220002065@iiti.ac.in",
     github: "https://github.com/PULKITMAN",
     linkedin: "https://www.linkedin.com/in/pulkit-gupta-45810825b/",
@@ -63,6 +63,7 @@ export const teamMembers = [
   {
     name: "Prateek",
     position: "Web Dev Head",
+    department: "Heads",
     email: "",
     github: "",
     linkedin: "",
@@ -72,7 +73,7 @@ export const teamMembers = [
   {
     name: "Prabhat Sati",
     position: "Core Member",
-
+    department: "Core Members",
     email: "ee230002052@iiti.ac.in",
     github: "https://github.com/Prabhat-IITI",
     linkedin: "https://www.linkedin.com/in/prabhat-sati-a93061202/",
@@ -82,7 +83,7 @@ export const teamMembers = [
   {
     name: "Adithya G",
     position: "Member",
-
+    department: "Members",
     email: "mems240005004@iiti.ac.in",
     github: "AdithyaG-we",
     linkedin: "https://www.linkedin.com/in/adithya-guruprasad-55190131b/",
@@ -92,7 +93,7 @@ export const teamMembers = [
   {
     name: "Himesh Jha",
     position: "Core Member",
-
+    department: "Core Members",
     email: "ee230002030@iiti.ac.in",
     github: "https://github.com/HIMESH-J",
     linkedin: "https://www.linkedin.com/in/himesh-jha-b84217282/",
@@ -102,7 +103,7 @@ export const teamMembers = [
   {
     name: "Nishit Rupavatia",
     position: "Core Member",
-
+    department: "Core Members",
     email: "ee230002047@iiti.ac.in",
     github: "https://github.com/NishitRupavatia",
     linkedin: "https://www.linkedin.com/in/nishit-rupavatia-65130b295/",
@@ -112,7 +113,7 @@ export const teamMembers = [
   {
     name: "Vansh Sabharwal",
     position: "Member",
-
+    department: "Members",
     email: "ee230002080@iiti.ac.in",
     github: "VanshSabharwal",
     linkedin: "www.linkedin.com/in/vansh-sabharwal-283b77290",
@@ -122,7 +123,7 @@ export const teamMembers = [
   {
     name: "Naman Goyal",
     position: "Member",
-
+    department: "Members",
     email: "ee230002046@iiti.ac.in",
     github: "https://github.com/Namangoyal04",
     linkedin: "https://in.linkedin.com/in/naman-goyal-605b2b355",
@@ -132,7 +133,7 @@ export const teamMembers = [
   {
     name: "Prashant Narang",
     position: "Member",
-
+    department: "Members",
     email: "ee230002056@iiti.ac.in",
     github: "https://github.com/prashantnarang79",
     linkedin: "https://www.linkedin.com/in/prashant-narang-101ba4286/",
@@ -142,7 +143,7 @@ export const teamMembers = [
   {
     name: "Poorna sai reddy Veerapureddy",
     position: "Member",
-
+    department: "Members",
     email: "ee230002082@iiti.ac.in",
     github: "https://github.com/poornareddy396",
     linkedin: "https://www.linkedin.com/in/poorna-reddy-032000288/",
@@ -152,7 +153,7 @@ export const teamMembers = [
   {
     name: "Nitin Mewara",
     position: "Member",
-
+    department: "Members",
     email: "ee230002048@iiti.ac.in",
     github: "https://github.com/nitinmewara123",
     linkedin: "https://www.linkedin.com/in/nitin-mewara-83b081289",
@@ -162,7 +163,7 @@ export const teamMembers = [
   {
     name: "Sarvadnyee Ghogare",
     position: "Member",
-
+    department: "Members",
     email: "ee230002065@iiti.ac.in",
     github: "https://github.com/SarvadnyeeGhogare",
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331/",
@@ -172,7 +173,7 @@ export const teamMembers = [
   {
     name: "Daksh Chandel",
     position: "Member",
-
+    department: "Members",
     email: "ee230002019@iiti.ac.in",
     github: "https://github.com/DC-005",
     linkedin: "https://www.linkedin.com/in/daksh-chandel-6a0812298/",
@@ -182,7 +183,7 @@ export const teamMembers = [
   {
     name: "Arjun Mahesh Dhamdhere",
     position: "Member",
-
+    department: "Members",
     email: "mems240005011@iiti.ac.in",
     github: "AG-RIDER",
     linkedin: "Arjun Dhamdhere",
@@ -192,7 +193,7 @@ export const teamMembers = [
   {
     name: "Vaidehi Bhat",
     position: "Member",
-
+    department: "Members",
     email: "ee230002077@iiti.ac.in",
     github: "https://github.com/VaidehiBhat",
     linkedin: "https://www.linkedin.com/in/vaidehi-bhat-259b2227a/",
@@ -202,7 +203,7 @@ export const teamMembers = [
   {
     name: "Mohd Sharik Mansoori",
     position: "Member",
-
+    department: "Members",
     email: "ee230002042@iiti.ac.in",
     github: "https://github.com/Sharik-18",
     linkedin: "https://www.linkedin.com/in/mohd-sharik-mansoori-26007828a/",
@@ -212,7 +213,7 @@ export const teamMembers = [
   {
     name: "Samruddhee Jadhav",
     position: "Member",
-
+    department: "Members",
     email: "ee230002064@iiti.ac.in",
     github: "https://github.com/sam2064",
     linkedin: "https://www.linkedin.com/in/samruddheejadhav/",
@@ -222,7 +223,7 @@ export const teamMembers = [
   {
     name: "Arnav Kumar",
     position: "Member",
-
+    department: "Members",
     email: "cse240001013@iiti.ac.in",
     github: "https://github.com/Stonky-Boi",
     linkedin: "none",
@@ -232,7 +233,7 @@ export const teamMembers = [
   {
     name: "Harshal Rudraksha",
     position: "Member",
-
+    department: "Members",
     email: "ee230002061@iiti.ac.in",
     github: "beyblade34125",
     linkedin: "https://www.linkedin.com/in/harshal-rudraksha-684286366/",
@@ -242,7 +243,7 @@ export const teamMembers = [
   {
     name: "Atharva Navarkar",
     position: "Member",
-
+    department: "Members",
     email: "ee220002057@iiti.ac.in",
     github: "https://github.com/atharvanavarkar",
     linkedin: "https://linkedin.com/in/atharva-navarkar-550b5b256",
@@ -252,7 +253,7 @@ export const teamMembers = [
   {
     name: "Aniket Goyal",
     position: "Member",
-
+    department: "Members",
     email: "ee230002009@iiti.ac.in",
     github: "https://github.com/Eclipsiess",
     linkedin: "aniketgoyal128@gmail.com",
@@ -262,7 +263,7 @@ export const teamMembers = [
   {
     name: "Prem Pratik",
     position: "Member",
-
+    department: "Members",
     email: "sse230021012@iiti.ac.in",
     github: "https://github.com/PratSpace07",
     linkedin: "https://www.linkedin.com/in/prem-pratik-240872283/",
@@ -272,7 +273,7 @@ export const teamMembers = [
   {
     name: "Praneeth K.S.S",
     position: "Member",
-
+    department: "Members",
     email: "ee220002042@iiti.ac.in",
     github: "PraneethKarri",
     linkedin: "praneeth-kss",
@@ -282,7 +283,7 @@ export const teamMembers = [
   {
     name: "Astik Sharma",
     position: "Member",
-
+    department: "Members",
     email: "ee220002021@iiti.ac.in",
     github: "https://github.com/astik01x",
     linkedin: "https://www.linkedin.com/in/astik-sharma-86ba6923b/",
@@ -292,7 +293,7 @@ export const teamMembers = [
   {
     name: "Kuvam Bhutani",
     position: "Member",
-
+    department: "Members",
     email: "ee230002037@iiti.ac.in",
     github: "https://github.com/Kuvam-Bhutani",
     linkedin: "https://www.linkedin.com/in/kuvam-bhutani-a2620030a/",
@@ -302,7 +303,7 @@ export const teamMembers = [
   {
     name: "Venepally Sathvika",
     position: "Member",
-
+    department: "Members",
     email: "ee230002083@iiti.ac.in",
     github: "https://github.com/sathvika1128",
     linkedin: "https://www.linkedin.com/in/sathvika-venepally-17530330b/",
@@ -312,7 +313,7 @@ export const teamMembers = [
   {
     name: "Hilori Jain",
     position: "Member",
-
+    department: "Members",
     email: "ee230002028@iiti.ac.in",
     github: "https://github.com/Hilorijain",
     linkedin: "https://www.linkedin.com/in/hilori-jain/",
@@ -322,7 +323,7 @@ export const teamMembers = [
   {
     name: "Arjun S Nair",
     position: "Member",
-
+    department: "Members",
     email: "ee220002016@iiti.ac.in",
     github: "arjun-593",
     linkedin: "arjun-s-nair593",
@@ -332,7 +333,7 @@ export const teamMembers = [
   {
     name: "Ashwin Soni",
     position: "Member",
-
+    department: "Members",
     email: "ce220004012@iiti.ac.in",
     github: "ashwinsoni9205",
     linkedin: "ashwin-soni-099200262",
@@ -342,7 +343,7 @@ export const teamMembers = [
   {
     name: "R. Sujeeth Kumar",
     position: "Member",
-
+    department: "Members",
     email: "ee220002066@iiti.ac.in",
     github: "https://github.com/Ryakala-Sujeeth",
     linkedin: "https://www.linkedin.com/in/ryakala-sujeeth-a1b6a0249/",
@@ -352,7 +353,7 @@ export const teamMembers = [
   {
     name: "Tejas Chaudhari",
     position: "Member",
-
+    department: "Members",
     email: "ee220002078@iiti.ac.in",
     github: "https://github.com/tejasopp",
     linkedin: "https://www.linkedin.com/in/tejas-chaudhari-650543250",
@@ -362,7 +363,7 @@ export const teamMembers = [
   {
     name: "Vatsalya Singh",
     position: "Member",
-
+    department: "Members",
     email: "ee220002080@iiti.ac.in",
     github: "https://github.com/Vatsalya3108",
     linkedin: "https://www.linkedin.com/in/vatsalya-singh-08a44225b/",
@@ -372,7 +373,7 @@ export const teamMembers = [
   {
     name: "Vaidik Shah",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "me240003069@iiti.ac.in",
     github: "https://www.github.com/VaidikShah0603",
     linkedin: "https://www.linkedin.com/in/vaidik-shah-091163322/",
@@ -382,7 +383,7 @@ export const teamMembers = [
   {
     name: "Aryan Jain",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002012@iiti.ac.in",
     github: "https://github.com/aryanj1412",
     linkedin: "https://www.linkedin.com/in/aryan-jain-453079321",
@@ -392,7 +393,7 @@ export const teamMembers = [
   {
     name: "Bhavy Ranka",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "me240003018@iiti.ac.in",
     github: "https://github.com/Bhavy-Ranka",
     linkedin: "https://www.linkedin.com/in/bhavy-ranka-100770321/",
@@ -402,7 +403,7 @@ export const teamMembers = [
   {
     name: "Manthan Gupta",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002036@iiti.ac.in",
     github: "https://github.com/Manthan-cpu",
     linkedin: "https://www.linkedin.com/in/manthan-gupta-88164a32a/",
@@ -413,7 +414,7 @@ export const teamMembers = [
   {
     name: "Harshitkumar Singh",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002027@iiti.ac.in",
     github: "https://github.com/Harsh_it",
     linkedin: "https://www.linkedin.com/in/harshit-singh-9875b8324/",
@@ -423,7 +424,7 @@ export const teamMembers = [
   {
     name: "Digvijay Singh Pundir",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002024@iiti.ac.in",
     github: "https://github.com/Digivjay-P",
     linkedin: "https://www.linkedin.com/in/digvijay-singh-pundir-65a386313/",
@@ -433,7 +434,7 @@ export const teamMembers = [
   {
     name: "Devansh Chaudhary",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002023@iiti.ac.in",
     github: "https://github.com/DevanshChaudhary163",
     linkedin: "https://www.linkedin.com/in/devansh-chaudhary-7b39152aa/",
@@ -443,7 +444,7 @@ export const teamMembers = [
   {
     name: "Abhishek Mehta",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002003@iiti.ac.in",
     github: "https://github.com/abhimaa",
     linkedin: "https://www.linkedin.com/in/abhishek-mehta-298240334",
@@ -453,7 +454,7 @@ export const teamMembers = [
   {
     name: "Karan Hitesh Bagthariya",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002028@iiti.ac.in",
     github: "https://github.com/trintriniiiii",
     linkedin: "https://www.linkedin.com/in/karan-bagthariya-b94962305/",
@@ -463,7 +464,7 @@ export const teamMembers = [
   {
     name: "Priyanshi Mahto",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002057@iiti.ac.in",
     github: "https://github.com/priyanshi-mahto",
     linkedin: "https://www.linkedin.com/in/priyanshi-mahto-702202326/",
@@ -473,7 +474,7 @@ export const teamMembers = [
   {
     name: "Yash Brijesh Modi",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002082@iiti.ac.in",
     github: "https://github.com/imYash17",
     linkedin: "http://linkedin.com/in/yash-modi-6b8644332",
@@ -483,7 +484,7 @@ export const teamMembers = [
   {
     name: "M Sai Krishna",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002034@iiti.ac.in",
     github: "https://github.com/SaiKrishnaXYZ",
     linkedin: "https://www.linkedin.com/in/sai-krishna-m-56124a316/",
@@ -493,7 +494,7 @@ export const teamMembers = [
   {
     name: "Ninad Kulkarni",
     position: "Volunteer",
-
+    department: "Volunteers",
     email: "ee240002032@iiti.ac.in",
     github: "https://github.com/ninad00/",
     linkedin: "https://www.linkedin.com/in/ninad-kulkarni-102434317/",
@@ -503,6 +504,7 @@ export const teamMembers = [
   {
     name: "Nagalla Abhisri Karthik",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee240002041@iiti.ac.in",
     github: "https://github.com/Abhi1517621",
     linkedin: "https://www.linkedin.com/in/nagalla-abhisri-karthik-1a8b9a334/",
@@ -512,6 +514,7 @@ export const teamMembers = [
   {
     name: "Aditya Saboo",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee240002006@iiti.ac.in",
     github: "https://github.com/adityasaboo10",
     linkedin: "https://www.linkedin.com/in/aditya-saboo-42b366311/",
@@ -521,6 +524,7 @@ export const teamMembers = [
   {
     name: "Managari Saatvik",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee240002035@iiti.ac.in",
     github: "https://github.com/SaatvikManagari",
     linkedin: "https://www.linkedin.com/in/saatvik-managari-2b2379342",
@@ -530,6 +534,7 @@ export const teamMembers = [
   {
     name: "Bhasuru Nikhil",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee240002017@iiti.ac.in",
     github: "https://github.com/bNikhil-183",
     linkedin: "https://www.linkedin.com/in/nikhil-bhasuru-2196a6314/",
@@ -539,6 +544,7 @@ export const teamMembers = [
   {
     name: "Vaibhav Sharma",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee240002077@iiti.ac.in",
     github: "https://github.com/Vaibhav-1023",
     linkedin: "https://www.linkedin.com/in/vaibhav-sharma-5a1208335/",
@@ -548,6 +554,7 @@ export const teamMembers = [
   {
     name: "Adharsh Gopalakrishnan",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee240002004@iiti.ac.in",
     github: "https://github.com/GAdharsh1977",
     linkedin: "https://www.linkedin.com/in/adharsh-gopalakrishnan-49a9b234a/",
@@ -557,6 +564,7 @@ export const teamMembers = [
   {
     name: "Dhananjay Dhumal",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ep240051008@iiti.ac.in",
     github: "https://github.com/ItsDhananjayDhumal",
     linkedin: "https://www.linkedin.com/in/dhananjay-dhumal-71921731a/",
@@ -567,6 +575,7 @@ export const teamMembers = [
     id: 58,
     name: "Kartikey Raghav",
     position: "Volunteer",
+    department: "Volunteers",
     email: "sse240021008@iiti.ac.in",
     github: "https://github.com/KartikeyRaghav",
     linkedin: "https://www.linkedin.com/in/k-raghav-",
@@ -576,6 +585,7 @@ export const teamMembers = [
     id: 59,
     name: "Guru Pranav",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee230002065@iiti.ac.in",
     github: "https://github.com/SarvadnyeeGhogare",
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
@@ -585,6 +595,7 @@ export const teamMembers = [
     id: 60,
     name: "Piyush",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee230002065@iiti.ac.in",
     github: "https://github.com/SarvadnyeeGhogare",
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
@@ -594,6 +605,7 @@ export const teamMembers = [
     id: 61,
     name: "Aniket",
     position: "Volunteer",
+    department: "Volunteers",
     email: "ee230002065@iiti.ac.in",
     github: "https://github.com/SarvadnyeeGhogare",
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
