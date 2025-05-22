@@ -6,7 +6,7 @@ import { teamMembers } from "../data/members";
 const TeamsPage = () => {
   const [selectedDepartment, setSelectedDepartment] = useState(null);
 
-  // Get unique departments
+  // Get unique departments for filtering
   const departments = Array.from(
     new Set(teamMembers.map((member) => member.department))
   );
@@ -15,6 +15,25 @@ const TeamsPage = () => {
   const filteredMembers = selectedDepartment
     ? teamMembers.filter((member) => member.department === selectedDepartment)
     : teamMembers;
+
+  // Group members by department
+  const headMembers = filteredMembers.filter(
+    (member) =>
+      member.department &&
+      member.department.toLowerCase() === "heads"
+  );
+
+  const memberMembers = filteredMembers.filter(
+    (member) =>
+      member.department &&
+      member.department.toLowerCase() === "members"
+  );
+
+  const volunteerMembers = filteredMembers.filter(
+    (member) =>
+      member.department &&
+      member.department.toLowerCase() === "volunteers"
+  );
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">
@@ -65,13 +84,50 @@ const TeamsPage = () => {
         </div>
       </div>
 
-      {/* Team Members Grid */}
+      {/* Team Members by Position */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredMembers.map((member) => (
-            <TeamMemberCard key={member.id} member={member} />
-          ))}
-        </div>
+
+        {/* Heads Section */}
+        {headMembers.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold mb-6 text-cyan-400 text-center uppercase tracking-wide">
+              Heads
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {headMembers.map((member) => (
+                <TeamMemberCard key={member.id} member={member} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Members Section */}
+        {memberMembers.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold mb-6 text-cyan-400 text-center uppercase tracking-wide">
+              Members
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {memberMembers.map((member) => (
+                <TeamMemberCard key={member.id} member={member} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Volunteers Section */}
+        {volunteerMembers.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold mb-6 text-cyan-400 text-center uppercase tracking-wide">
+              Volunteers
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {volunteerMembers.map((member) => (
+                <TeamMemberCard key={member.id} member={member} />
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* No results message */}
         {filteredMembers.length === 0 && (

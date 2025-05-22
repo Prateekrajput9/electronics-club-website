@@ -33,9 +33,9 @@ export const teamMembers = [
     name: "Prateek",
     position: "Web Dev Head",
     department: "Heads",
-    email: "",
-    github: "",
-    linkedin: "",
+    email: "ee230002057@iiti.ac.in",
+    github: "https://github.com/prateekrajput9",
+    linkedin: "https://www.linkedin.com/in/prateek-rajput-46b9ba287/",
     tagline: "Web Solutions, Code Precision",
     id: 7,
   },
@@ -605,14 +605,5 @@ export const teamMembers = [
     tagline: "Design Develop Debug Deliver",
   },
  
-  {
-    id: 61,
-    name: "Aniket",
-    position: "Member",
-    department: "Members",
-    email: "ee230002065@iiti.ac.in",
-    github: "https://github.com/SarvadnyeeGhogare",
-    linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
-    tagline: "Pixels meet perfect logic",
-  },
+  
 ];
