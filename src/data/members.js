@@ -85,8 +85,8 @@ export const teamMembers = [
   
   {
     name: "Prabhat Sati",
-    position: "Core Member",
-    department: "Core Members",
+    position: "Member",
+    department: "Members",
     email: "ee230002052@iiti.ac.in",
     github: "https://github.com/Prabhat-IITI",
     linkedin: "https://www.linkedin.com/in/prabhat-sati-a93061202/",
@@ -105,8 +105,8 @@ export const teamMembers = [
   },
   {
     name: "Himesh Jha",
-    position: "Core Member",
-    department: "Core Members",
+    position: "Member",
+    department: "Members",
     email: "ee230002030@iiti.ac.in",
     github: "https://github.com/HIMESH-J",
     linkedin: "https://www.linkedin.com/in/himesh-jha-b84217282/",
@@ -115,8 +115,8 @@ export const teamMembers = [
   },
   {
     name: "Nishit Rupavatia",
-    position: "Core Member",
-    department: "Core Members",
+    position: "Member",
+    department: "Members",
     email: "ee230002047@iiti.ac.in",
     github: "https://github.com/NishitRupavatia",
     linkedin: "https://www.linkedin.com/in/nishit-rupavatia-65130b295/",
@@ -608,8 +608,8 @@ export const teamMembers = [
   {
     id: 61,
     name: "Aniket",
-    position: "Volunteer",
-    department: "Volunteers",
+    position: "Member",
+    department: "Members",
     email: "ee230002065@iiti.ac.in",
     github: "https://github.com/SarvadnyeeGhogare",
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
