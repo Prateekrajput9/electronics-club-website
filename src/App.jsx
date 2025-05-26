@@ -84,9 +84,9 @@ function App() {
         <Route path="/team" element={<TeamPage />} />
         <Route path="/projects" element={<ProjectCard />} />
         <Route path="/projects/:id" element={<ProjectDetails />} />
-        <Route path="/about us" element={<AboutUs />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/contact us" element={<ContactUs />} />
+        <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/events" element={<WorkshopForm />} />
         <Route path="*" element={<HomePage />} />
       </Routes>

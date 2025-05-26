@@ -101,7 +101,7 @@ const HomePage = () => {
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
             <button
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-2 px-6 rounded-full transition-all hover:scale-105 shadow-lg shadow-cyan-500/20 text-sm md:text-base"
-              onClick={() => navigate("/contact us")}
+              onClick={() => navigate("/contact-us")}
             >
               Contact US
             </button>
