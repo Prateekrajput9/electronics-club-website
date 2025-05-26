@@ -22,7 +22,11 @@ const TeamsPage = () => {
       member.department &&
       member.department.toLowerCase() === "heads"
   );
-
+ const webMembers = filteredMembers.filter(
+    (member) =>
+      member.department &&
+      member.department.toLowerCase() === "web"
+  );
   const memberMembers = filteredMembers.filter(
     (member) =>
       member.department &&
@@ -114,7 +118,19 @@ const TeamsPage = () => {
             </div>
           </div>
         )}
-
+ {/* web Section */}
+        {webMembers.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-4xl font-bold mb-6 text-cyan-400 text-center uppercase tracking-wide">
+            Web Dev Team
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+              {webMembers.map((member) => (
+                <TeamMemberCard key={member.id} member={member} />
+              ))}
+            </div>
+          </div>
+        )}
         {/* Volunteers Section */}
         {volunteerMembers.length > 0 && (
           <div className="mb-12">
@@ -140,8 +156,8 @@ const TeamsPage = () => {
       </div>
 
       {/* Join the Team Section */}
-      <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/40 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+      {/* <div className="bg-gradient-to-r from-cyan-900/40 to-blue-900/40 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center"> */}
           {/* <h2 className="text-3xl font-bold mb-4">Join Our Team</h2>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-8">
             Passionate about electronics and innovation? We're always looking
@@ -154,8 +170,8 @@ const TeamsPage = () => {
             Get in Touch
           </a> */}
         </div>
-      </div>
-    </div>
+    //   </div>
+    // </div>
   );
 };
 
