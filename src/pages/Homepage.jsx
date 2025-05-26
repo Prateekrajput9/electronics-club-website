@@ -31,27 +31,27 @@ const HomePage = () => {
         `}
       </style>
 
-      {/* Hero Section - Reduced padding */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-center px-2 z-20">
+      {/* Hero Section with mobile-only top/bottom margin */}
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-center px-2 z-20 mt-10 mb-10 md:mt-0 md:mb-0">
         <div
           className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Welcome badge - reduced margin */}
+          {/* Welcome badge */}
           <div className="mb-3">
             <span className="bg-cyan-500/20 text-cyan-300 py-1 px-3 rounded-full text-xs md:text-sm font-medium backdrop-blur-sm border border-cyan-500/30">
               Welcome to Electronics Club
             </span>
           </div>
 
-          {/* Triangular Logo - reduced size and margin */}
+          {/* Triangular Logo */}
           <div className="mb-4 flex justify-center">
             <motion.div
-              whileHover={{ 
+              whileHover={{
                 scale: 1.1,
                 rotate: [0, -5, 5, -5, 0],
-                transition: { 
+                transition: {
                   rotate: { duration: 0.6, ease: "easeInOut" },
                   scale: { duration: 0.3 }
                 }
@@ -76,7 +76,7 @@ const HomePage = () => {
                 }}
                 animate={{ rotate: 360 }}
                 transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
-                whileHover={{ 
+                whileHover={{
                   borderColor: "rgba(6, 182, 212, 0.8)",
                   transition: { duration: 0.3 }
                 }}
@@ -84,12 +84,12 @@ const HomePage = () => {
             </motion.div>
           </div>
 
-          {/* Hindi Text - reduced margin and font size */}
+          {/* Hindi Text */}
           <p className="text-white text-lg md:text-2xl lg:text-3xl font-bold mb-2">
             संविद्युत् वज्रसमं बलं, यः सृजति नव्यं जगत्।
           </p>
 
-          {/* Main heading - reduced margin and font size */}
+          {/* Main heading */}
           <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             Electronics Club <br />
             <span className="text-white text-2xl md:text-3xl lg:text-4xl font-bold">
@@ -97,7 +97,7 @@ const HomePage = () => {
             </span>
           </h1>
 
-          {/* Call to Action Buttons - reduced margin and padding */}
+          {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
             <button
               className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-2 px-6 rounded-full transition-all hover:scale-105 shadow-lg shadow-cyan-500/20 text-sm md:text-base"
@@ -113,7 +113,7 @@ const HomePage = () => {
             </button>
           </div>
 
-          {/* Centered Stats Section - reduced margin and padding */}
+          {/* Stats Section */}
           <div className="flex justify-center mt-8">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-xl w-full">
               {[
@@ -138,7 +138,7 @@ const HomePage = () => {
         </div>
       </div>
 
-      {/* Social Icons - reduced padding */}
+      {/* Social Icons */}
       <div className="absolute top-1/3 right-2 md:right-4 flex flex-col gap-3 text-white z-50 bg-black/25 backdrop-blur-md p-3 md:p-4 rounded-2xl border border-white/10">
         <a
           href="#"
@@ -174,7 +174,7 @@ const HomePage = () => {
         </a>
       </div>
 
-      {/* Featured Technologies - reduced padding */}
+      {/* Featured Technologies */}
       <div className="absolute bottom-0 left-0 w-full bg-black/30 backdrop-blur-md py-2 md:py-3 z-30">
         <div className="container mx-auto px-2 md:px-4">
           <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-xs md:text-sm text-white/70">
