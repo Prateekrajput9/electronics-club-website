@@ -114,27 +114,27 @@ const HomePage = () => {
           </div>
 
           {/* Stats Section */}
-          <div className="flex justify-center mt-8">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-xl w-full">
-              {[
-                { number: "20+", label: "Projects" },
-                { number: "50+", label: "Members" },
-                { number: "10+", label: "Workshops" },
-              ].map((stat, index) => (
-                <div
-                  key={index}
-                  className="bg-black/20 backdrop-blur-md p-3 md:p-4 rounded-xl border border-white/10 hover:border-cyan-500/50 transition-all text-center"
-                >
-                  <div className="text-2xl md:text-3xl font-extrabold text-cyan-400">
-                    {stat.number}
-                  </div>
-                  <div className="text-white/90 text-sm md:text-base font-medium">
-                    {stat.label}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          {/* Stats Section */}
+<div className="flex flex-row gap-4 sm:grid sm:grid-cols-3 sm:gap-4 max-w-xl w-full mt-8">
+  {[
+    { number: "20+", label: "Projects" },
+    { number: "50+", label: "Members" },
+    { number: "10+", label: "Workshops" },
+  ].map((stat, index) => (
+    <div
+      key={index}
+      className="aspect-square flex-1 bg-black/20 backdrop-blur-md p-3 md:p-4 rounded-xl border border-white/10 hover:border-cyan-500/50 transition-all text-center flex flex-col items-center justify-center"
+    >
+      <div className="text-2xl md:text-3xl font-extrabold text-cyan-400">
+        {stat.number}
+      </div>
+      <div className="text-white/90 text-sm md:text-base font-medium">
+        {stat.label}
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
 
