@@ -74,7 +74,7 @@ export const teamMembers = [
  {
     id: 60,
     name: "Piyush",
-    position: "Web dev Co head",
+    position: "Web Dev Co-head",
     department: "Heads",
     email: "ee230002065@iiti.ac.in",
     github: "https://github.com/SarvadnyeeGhogare",
