@@ -78,26 +78,7 @@ const AboutUs = () => {
         </motion.div>
 
         {/* Stats Badges */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.7 }}
-          className="relative z-20 flex flex-wrap justify-center gap-6 mt-8"
-        >
-          {[
-            { number: "50+", label: "Active Members" },
-            { number: "10+", label: "Workshops" },
-            { number: "5+", label: "On-Going Projects" },
-          ].map((stat, idx) => (
-            <div
-              key={idx}
-              className="px-7 py-4 bg-gradient-to-r from-cyan-500/80 to-blue-500/80 rounded-xl shadow-lg text-center border-2 border-cyan-400/40"
-            >
-              <div className="text-2xl md:text-3xl font-extrabold text-white">{stat.number}</div>
-              <div className="text-base md:text-lg text-white/90">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div>
+       
 
         {/* Glassmorphic Info Panel */}
         <motion.div
@@ -116,6 +97,26 @@ const AboutUs = () => {
             At the Electronics Club of IIT Indore, we’re always ready to power things up!
           </p>
         </motion.div>
+         {/* <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          className="relative z-20 flex flex-wrap justify-center gap-6 mt-8"
+        >
+          {[
+            { number: "50+", label: "Active Members" },
+            { number: "10+", label: "Workshops" },
+            { number: "5+", label: "On-Going Projects" },
+          ].map((stat, idx) => (
+            <div
+              key={idx}
+              className="px-7 py-4 bg-gradient-to-r from-cyan-500/80 to-blue-500/80 rounded-xl shadow-lg text-center border-2 border-cyan-400/40"
+            >
+              <div className="text-2xl md:text-3xl font-extrabold text-white">{stat.number}</div>
+              <div className="text-base md:text-lg text-white/90">{stat.label}</div>
+            </div>
+          ))}
+        </motion.div> */}
       </div>
     </>
   );

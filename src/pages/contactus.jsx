@@ -15,15 +15,15 @@ const ContactUs = () => {
           </div>
           <div className="flex items-center space-x-3">
             <Mail className="text-cyan-400" size={20} />
-            <span>Email: <span className="text-gray-300">electronicsclub.iiti.ac.in</span></span>
+            <span>Email: <span className="text-gray-300"> elecclub.iiti.ac.in</span></span>
           </div>
           <div className="flex items-center space-x-3">
             <Phone className="text-cyan-400" size={20} />
-            <span>Mobile: <span className="text-gray-300">+91 9876543210</span></span>
+            <span>Mobile: <span className="text-gray-300"> +91 9730757888</span></span>
           </div>
           <div className="flex items-center space-x-3">
             <Instagram className="text-cyan-400" size={20} />
-            <span>Instagram: <span className="text-gray-300">@electronicsclub</span></span>
+            <span>Instagram: <span className="text-gray-300">@electronics_club_iiti</span></span>
           </div>
         </div>
       </div>
