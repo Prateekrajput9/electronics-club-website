@@ -604,34 +604,6 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
     tagline: "Design Develop Debug Deliver",
   },
-  {
-    id: 28,
-    name: "Piyush Raj",
-    position: "Web Dev Co-Head",
-    department: "Web Dev",
-    email: "ee230002051@iiti.ac.in",
-    github: "https://github.com/piyush-raj-07",
-    linkedin: "https://www.linkedin.com/in/piyush-raj-0a1975284/?originalSubdomain=in",
-    tagline: "Clean Code, Clean Results",
-  },
-  {
-    id: 29,
-    name: "Aniket",
-    position: "Member",
-    department: "Web Dev",
-    email: "ee230002065@iiti.ac.in",
-    github: "https://github.com/SarvadnyeeGhogare",
-    linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
-    tagline: "Pixels meet perfect logic",
-  },
-   {
-    id: 30,
-    name: "Prateek",
-    position: "Web dev Head",
-    department: "Web Dev",
-    email: "ee230002065@iiti.ac.in",
-    github: "https://github.com/SarvadnyeeGhogare",
-    linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
-    tagline: "Do or Die",
-  },
+
+   
 ];
