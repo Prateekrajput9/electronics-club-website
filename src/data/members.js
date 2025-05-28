@@ -95,7 +95,7 @@ export const teamMembers = [
   },
   {
     name: "Adithya G",
-    position: "Member",
+    position: "Volunteer",
     department: "Volunteers",
     email: "mems240005004@iiti.ac.in",
     github: "AdithyaG-we",
@@ -315,7 +315,7 @@ export const teamMembers = [
   },
   {
     name: "Venepally Sathvika",
-    position: "Member",
+    position: "Volunteer",
     department: "Volunteers",
     email: "ee230002083@iiti.ac.in",
     github: "https://github.com/sathvika1128",
@@ -325,7 +325,7 @@ export const teamMembers = [
   },
   {
     name: "Hilori Jain",
-    position: "Member",
+    position: "Volunteer",
     department: "Volunteers",
     email: "ee230002028@iiti.ac.in",
     github: "https://github.com/Hilorijain",

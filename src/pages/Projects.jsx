@@ -477,7 +477,7 @@ export default function ProjectsPage() {
             }`}
           >
             <Clock className="h-4 w-4" />
-            Pending ({pendingProjects.length})
+            Ongoing ({pendingProjects.length})
           </button>
         </div>
 
@@ -598,7 +598,7 @@ function ProjectCard({ project }) {
       return (
         <div className="absolute top-3 right-3 bg-yellow-500/80 backdrop-blur-md px-2 py-1 rounded-full text-xs font-medium text-white flex items-center gap-1">
           <Clock className="h-3 w-3" />
-          Pending
+          Ongoing
         </div>
       )
     }
