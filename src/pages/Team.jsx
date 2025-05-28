@@ -214,7 +214,7 @@ const TeamsPage = () => {
         {memberMembers.length > 0 && (
           <>
             <h2 className="text-4xl font-extrabold mb-6 text-center uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 drop-shadow-lg flex items-center justify-center gap-3">
-              <span>Members</span> <span>🧑‍🤝‍🧑</span>
+              <span>Members</span> <span></span>
               <span className="text-lg font-normal text-gray-400">({memberMembers.length})</span>
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
@@ -234,7 +234,7 @@ const TeamsPage = () => {
         {/* Volunteers Section */}
         {volunteerMembers.length > 0 && (
           <>
-            <h2 className="text-4xl font-extrabold mb-6 text-center uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-400 drop-shadow-lg flex items-center justify-center gap-3">
+            <h2 className="text-4xl font-extrabold mb-6 text-center uppercase tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-violet-400 drop-shadow-lg flex items-center justify-center gap-3">
               <span>Volunteers</span> <span>🤝</span>
               <span className="text-lg font-normal text-gray-400">({volunteerMembers.length})</span>
             </h2>
