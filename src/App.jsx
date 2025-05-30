@@ -9,7 +9,8 @@ import WorkshopForm from "./pages/workshop";
 import ProjectDetails from "./pages/ProjectDetails";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/contactus";
-
+import Login from "./pages/login";
+import Gallery from "./pages/gallery";
 function App() {
   const [authorized, setAuthorized] = useState(false);
   const [input, setInput] = useState("");
@@ -88,6 +89,8 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/events" element={<WorkshopForm />} />
+          <Route path="/login" element={<Login/>} />
+           <Route path="/gallery" element={<Gallery/>} />
         <Route path="*" element={<HomePage />} />
       </Routes>
     </>

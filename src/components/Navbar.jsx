@@ -8,12 +8,14 @@ const Navbar = () => {
   const location = useLocation().pathname.split("/")[1];
   const navItems = [
     "Home",
-    "About us",
+    "About Us",
     "Blogs",
     "Projects",
     "Team",
     "Contact Us",
     "Events",
+    "Login",
+    "Gallery"
   ];
 
   // Helper to create route paths

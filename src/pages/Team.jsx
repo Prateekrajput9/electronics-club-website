@@ -53,9 +53,9 @@ const TeamsPage = () => {
     setSelectedDepartment(null);
   };
 
-  return (
+  return (<div>  <Navbar />
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-950 to-black text-white font-sans">
-      <Navbar />
+    
 
       {/* Hero Section */}
       <div className="relative pt-24 pb-10 px-4 sm:px-6 lg:px-8 text-center">
@@ -279,6 +279,7 @@ const TeamsPage = () => {
           </div>
         )}
       </div>
+    </div>
     </div>
   );
 };
