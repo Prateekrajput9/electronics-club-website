@@ -1,5 +1,5 @@
 export const teamMembers = [
-    {
+  {
     name: "Advay Kunte",
     position: "Club Head",
     department: "Heads",
@@ -19,7 +19,7 @@ export const teamMembers = [
     tagline: "god needs no intro",
     id: 2,
   },
-   {
+  {
     name: "Pulkit Navnit Gupta",
     position: "Ex-Club Head",
     department: "Heads",
@@ -28,6 +28,16 @@ export const teamMembers = [
     linkedin: "https://www.linkedin.com/in/pulkit-gupta-45810825b/",
     tagline: "We don't follow trends — we make the next wave",
     id: 6,
+  },
+  {
+    name: "Prince Kumar Suman",
+    position: "Ex-Co Head",
+    department: "Heads",
+    email: "ee220002064@iiti.ac.in",
+    github: "https://github.com/princesuman2004",
+    linkedin: "https://www.linkedin.com/in/princesuman2004/",
+    tagline: "Curious and Exploring!",
+    id: 61,
   },
   {
     name: "Prateek",
@@ -50,7 +60,7 @@ export const teamMembers = [
       "On the frontlines of innovation - I march with circuits , code and courage",
     id: 3,
   },
-  
+
   {
     name: "Viraj Samir Patel",
     position: "Head of Outreach and Social Media",
@@ -71,8 +81,7 @@ export const teamMembers = [
     tagline: '"Dream It. Build It. Charge It."',
     id: 5,
   },
- {
-    id: 60,
+  {
     name: "Piyush",
     position: "Co-head",
     department: "Web",
@@ -80,9 +89,18 @@ export const teamMembers = [
     github: "https://github.com/SarvadnyeeGhogare",
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
     tagline: "Clean Code, Clean Results",
+    id: 60,
   },
- 
-  
+  {
+    name: "Rakshit",
+    position: "Member",
+    department: "Members",
+    email: "",
+    github: "",
+    linkedin: "",
+    tagline: "Exploring the Circuitous Path",
+    id: 62,
+  },
   {
     name: "Prabhat Sati",
     position: "Member",
@@ -585,7 +603,6 @@ export const teamMembers = [
     id: 57,
   },
   {
-    id: 58,
     name: "Kartikey Raghav",
     position: "Volunteer",
     department: "Web",
@@ -593,9 +610,9 @@ export const teamMembers = [
     github: "https://github.com/KartikeyRaghav",
     linkedin: "https://www.linkedin.com/in/k-raghav-",
     tagline: "Eat, Sleep, Code, Repeat!",
+    id: 58,
   },
   {
-    id: 59,
     name: "Guru Pranav",
     position: "Volunteer",
     department: "Web",
@@ -603,7 +620,6 @@ export const teamMembers = [
     github: "https://github.com/SarvadnyeeGhogare",
     linkedin: "https://www.linkedin.com/in/sarvadnyee-ghogare-380342331",
     tagline: "Design Develop Debug Deliver",
+    id: 59,
   },
-
-   
 ];
