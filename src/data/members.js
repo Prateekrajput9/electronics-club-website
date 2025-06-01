@@ -76,7 +76,7 @@ export const teamMembers = [
     position: "Head of Design",
     department: "Members",
     email: "ee240002013@iiti.ac.in",
-    github: "https://github.com/",
+    github: "https://github.com/ashmita2212",
     linkedin: "https://www.linkedin.com/in/ashmita-sharma-747009319/",
     tagline: '"Dream It. Build It. Charge It."',
     id: 5,
