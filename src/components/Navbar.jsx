@@ -15,7 +15,7 @@ const Navbar = () => {
     "Contact Us",
     "Events",
     "Login",
-    "Gallery"
+    
   ];
 
   // Helper to create route paths

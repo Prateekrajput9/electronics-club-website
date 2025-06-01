@@ -67,9 +67,9 @@ const AboutUs = () => {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="relative z-20 mt-20 sm:mt-24 text-center px-3 sm:px-4"
+          className="relative z-20 mt-20 sm:mt-18 text-center px-3 sm:px-4"
         >
-          <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold text-white drop-shadow-2xl text-glow mb-3 sm:mb-4">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white drop-shadow-2xl text-glow mb-0 sm:mb-0">
             About <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">Us</span>
           </h1>
           <motion.p 

@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import image2 from "../assets/logo2.jpg";
 
+
 const HomePage = () => {
   const [isVisible, setIsVisible] = useState(false);
   const navigate = useNavigate();
@@ -31,8 +32,8 @@ const HomePage = () => {
         `}
       </style>
 
-      {/* Hero Section with mobile-only top/bottom margin */}
-      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-center px-2 z-20 mt-10 mb-10 md:mt-0 md:mb-0">
+      {/* Hero Section */}
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-center px-2 z-20 mt-4 mb-4 md:mt-0 md:mb-0">
         <div
           className={`transition-all duration-1000 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -40,13 +41,13 @@ const HomePage = () => {
         >
           {/* Welcome badge */}
           <div className="mb-3">
-            <span className="bg-cyan-500/20 text-cyan-300 py-1 px-3 rounded-full text-xs md:text-sm font-medium backdrop-blur-sm border border-cyan-500/30">
+            <span className="bg-cyan-500/20 text-cyan-300 py-1.5 px-3 rounded-full text-sm md:text-base font-medium backdrop-blur-sm border border-cyan-500/30">
               Welcome to Electronics Club
             </span>
           </div>
 
           {/* Triangular Logo */}
-          <div className="mb-4 flex justify-center">
+          <div className="mb-3 flex justify-center">
             <motion.div
               whileHover={{
                 scale: 1.1,
@@ -85,28 +86,28 @@ const HomePage = () => {
           </div>
 
           {/* Hindi Text */}
-          <p className="text-white text-lg md:text-2xl lg:text-3xl font-bold mb-2">
+          <p className="text-white text-lg md:text-xl lg:text-2xl font-bold mb-2">
             संविद्युत् वज्रसमं बलं, यः सृजति नव्यं जगत्।
           </p>
 
           {/* Main heading */}
-          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+          <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-bold mb-3">
             Electronics Club <br />
-            <span className="text-white text-2xl md:text-3xl lg:text-4xl font-bold">
+            <span className="text-white text-xl md:text-3xl lg:text-4xl font-bold">
               IIT <span style={{ color: "#00ffff" }}>Indore</span>
             </span>
           </h1>
 
           {/* Call to Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-4">
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mt-3">
             <button
-              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-2 px-6 rounded-full transition-all hover:scale-105 shadow-lg shadow-cyan-500/20 text-sm md:text-base"
+              className="bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 text-white font-bold py-2 px-5 rounded-full transition-all hover:scale-105 shadow-lg shadow-cyan-500/20 text-sm md:text-base"
               onClick={() => navigate("/contact-us")}
             >
               Contact US
             </button>
             <button
-              className="bg-transparent border-2 border-white/30 hover:border-white text-white font-bold py-2 px-6 rounded-full transition-all hover:scale-105 backdrop-blur-sm text-sm md:text-base"
+              className="bg-transparent border-2 border-white/30 hover:border-white text-white font-bold py-2 px-5 rounded-full transition-all hover:scale-105 backdrop-blur-sm text-sm md:text-base"
               onClick={() => navigate("/projects")}
             >
               Explore Projects
@@ -114,80 +115,68 @@ const HomePage = () => {
           </div>
 
           {/* Stats Section */}
-          {/* Stats Section */}
-<div className="flex flex-row gap-4 sm:grid sm:grid-cols-3 sm:gap-4 max-w-xl w-full mt-8">
-  {[
-    { number: "20+", label: "Projects" },
-    { number: "50+", label: "Members" },
-    { number: "10+", label: "Workshops" },
-  ].map((stat, index) => (
-    <div
-      key={index}
-      className="aspect-square flex-1 bg-black/20 backdrop-blur-md p-3 md:p-4 rounded-xl border border-white/10 hover:border-cyan-500/50 transition-all text-center flex flex-col items-center justify-center"
-    >
-      <div className="text-2xl md:text-3xl font-extrabold text-cyan-400">
-        {stat.number}
-      </div>
-      <div className="text-white/90 text-sm md:text-base font-medium">
-        {stat.label}
-      </div>
-    </div>
-  ))}
-</div>
-
+          <div className="flex flex-row gap-3 sm:grid sm:grid-cols-3 sm:gap-3 max-w-xl w-full mt-4">
+            {[
+              { number: "20+", label: "Projects" },
+              { number: "50+", label: "Members" },
+              { number: "10+", label: "Workshops" },
+            ].map((stat, index) => (
+              <div
+                key={index}
+                className="aspect-square flex-1 bg-black/20 backdrop-blur-md p-3 md:p-3 rounded-xl border border-white/10 hover:border-cyan-500/50 transition-all text-center flex flex-col items-center justify-center"
+              >
+                <div className="text-2xl md:text-3xl font-extrabold text-cyan-400">
+                  {stat.number}
+                </div>
+                <div className="text-white/90 text-sm md:text-base font-medium">
+                  {stat.label}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-
-      {/* Social Icons */}
+ {/* Social Icons */}
       <div className="absolute top-1/3 right-2 md:right-4 flex flex-col gap-3 text-white z-50 bg-black/25 backdrop-blur-md p-3 md:p-4 rounded-2xl border border-white/10">
         <a
-          href="#"
+          href="https://www.linkedin.com/company/elecclub-iit-indore/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-cyan-400"
         >
           <FaLinkedin className="w-5 h-5 md:w-6 md:h-6 hover:scale-150 transition-transform" />
         </a>
+        
         <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-cyan-400"
-        >
-          <FaTwitter className="w-5 h-5 md:w-6 md:h-6 hover:scale-150 transition-transform" />
-        </a>
-        <a
-          href="#"
+          href="https://www.instagram.com/electronics_club_iiti/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-cyan-400"
         >
           <FaInstagram className="w-5 h-5 md:w-6 md:h-6 hover:scale-150 transition-transform" />
         </a>
-        <a
-          href="#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-cyan-400"
-        >
-          <FaFacebook className="w-5 h-5 md:w-6 md:h-6 hover:scale-150 transition-transform" />
-        </a>
+      
       </div>
-
       {/* Featured Technologies */}
       <div className="absolute bottom-0 left-0 w-full bg-black/30 backdrop-blur-md py-2 md:py-3 z-30">
-        <div className="container mx-auto px-2 md:px-4">
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-xs md:text-sm text-white/70">
-            <span className="font-medium text-white text-xs md:text-sm">
+        <div className="container mx-auto px-2 md:px-3">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-5 text-sm md:text-base text-white/70">
+            <span className="font-medium text-white text-sm md:text-base">
               Technologies:
             </span>
             <span className="hover:text-cyan-400 transition-colors">Arduino</span>
             <span className="hover:text-cyan-400 transition-colors">Raspberry Pi</span>
             <span className="hover:text-cyan-400 transition-colors">PCB Design</span>
             <span className="hover:text-cyan-400 transition-colors">IoT</span>
-            <span className="hover:text-cyan-400 transition-colors">HDL & FPGA</span>
-            <span className="hover:text-cyan-400 transition-colors">SPICE</span>
-            <span className="hover:text-cyan-400 transition-colors">Embedded Systems</span>
+            <span className="hover:text-cyan-400 transition-colors">
+              Digital Design with HDL and FPGA
+            </span>
+            <span className="hover:text-cyan-400 transition-colors">
+              Analog Design with SPICE
+            </span>
+            <span className="hover:text-cyan-400 transition-colors">
+              Embedded Systems
+            </span>
           </div>
         </div>
       </div>
