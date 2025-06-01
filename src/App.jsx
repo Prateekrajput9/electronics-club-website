@@ -12,69 +12,69 @@ import ContactUs from "./pages/contactus";
 import Login from "./pages/login";
 import Gallery from "./pages/gallery";
 function App() {
-  const [authorized, setAuthorized] = useState(false);
-  const [input, setInput] = useState("");
+  // const [authorized, setAuthorized] = useState(false);
+  // const [input, setInput] = useState("");
 
-  const password = "secret123"; // Change this
+  // const password = "secret123"; // Change this
 
-  const handleLogin = () => {
-    if (input === password) {
-      setAuthorized(true);
-    } else {
-      alert("❌ Wrong password!");
-    }
-  };
+  // const handleLogin = () => {
+  //   if (input === password) {
+  //     setAuthorized(true);
+  //   } else {
+  //     alert("❌ Wrong password!");
+  //   }
+  // };
 
-  if (!authorized) {
-    return (
-      <div style={{
-        height: "100vh",
-        backgroundColor: "#0d1117",
-        color: "#f0f6fc",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        fontFamily: "Arial, sans-serif"
-      }}>
-        <h2 style={{ fontSize: "24px", marginBottom: "20px" }}>
-          🔐 Enter Password to Access the Site
-        </h2>
-        <input
-          type="password"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Password"
-          style={{
-            padding: "10px",
-            fontSize: "16px",
-            borderRadius: "6px",
-            border: "1px solid #30363d",
-            backgroundColor: "#161b22",
-            color: "#f0f6fc",
-            outline: "none",
-            marginBottom: "12px",
-            width: "250px",
-            textAlign: "center"
-          }}
-        />
-        <button
-          onClick={handleLogin}
-          style={{
-            padding: "10px 20px",
-            fontSize: "16px",
-            backgroundColor: "#238636",
-            border: "none",
-            borderRadius: "6px",
-            color: "white",
-            cursor: "pointer"
-          }}
-        >
-          Submit
-        </button>
-      </div>
-    );
-  }
+  // if (!authorized) {
+  //   return (
+  //     <div style={{
+  //       height: "100vh",
+  //       backgroundColor: "#0d1117",
+  //       color: "#f0f6fc",
+  //       display: "flex",
+  //       flexDirection: "column",
+  //       justifyContent: "center",
+  //       alignItems: "center",
+  //       fontFamily: "Arial, sans-serif"
+  //     }}>
+  //       <h2 style={{ fontSize: "24px", marginBottom: "20px" }}>
+  //         🔐 Enter Password to Access the Site
+  //       </h2>
+  //       <input
+  //         type="password"
+  //         value={input}
+  //         onChange={(e) => setInput(e.target.value)}
+  //         placeholder="Password"
+  //         style={{
+  //           padding: "10px",
+  //           fontSize: "16px",
+  //           borderRadius: "6px",
+  //           border: "1px solid #30363d",
+  //           backgroundColor: "#161b22",
+  //           color: "#f0f6fc",
+  //           outline: "none",
+  //           marginBottom: "12px",
+  //           width: "250px",
+  //           textAlign: "center"
+  //         }}
+  //       />
+  //       <button
+  //         onClick={handleLogin}
+  //         style={{
+  //           padding: "10px 20px",
+  //           fontSize: "16px",
+  //           backgroundColor: "#238636",
+  //           border: "none",
+  //           borderRadius: "6px",
+  //           color: "white",
+  //           cursor: "pointer"
+  //         }}
+  //       >
+  //         Submit
+  //       </button>
+  //     </div>
+  //   );
+  // }
 
   return (
     <>

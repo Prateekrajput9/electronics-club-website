@@ -15,7 +15,7 @@ const ContactUs = () => {
           </div>
           <div className="flex items-center space-x-3">
             <Mail className="text-cyan-400" size={20} />
-            <span>Email: <span className="text-gray-300"> elecclub.iiti.ac.in</span></span>
+            <span>Email: <span className="text-gray-300"> elecclubiiti.ac.in</span></span>
           </div>
           <div className="flex items-center space-x-3">
             <Phone className="text-cyan-400" size={20} />
@@ -35,7 +35,7 @@ const ContactUs = () => {
           We’d love to hear from you! Send us a message.
         </p>
         <form
-          action="https://formspree.io/f/mdkgjkqk"
+          action="https://formspree.io/f/mqaqrjdq"
           method="POST"
           className="space-y-6"
           target='blank'
