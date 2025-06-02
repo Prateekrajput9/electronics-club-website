@@ -1,4 +1,4 @@
-
+"use client"
 
 import { useState, useEffect } from "react"
 import {
@@ -12,6 +12,7 @@ import {
   ChevronRight,
   Maximize,
   ChevronLeft,
+  X,
 } from "lucide-react"
 import { Link, useParams } from "react-router-dom"
 import Navbar from "../components/Navbar"
@@ -21,6 +22,7 @@ export default function ProjectDetails() {
   const { id } = useParams()
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [activeImage, setActiveImage] = useState(0)
+  const [isFullscreen, setIsFullscreen] = useState(false)
 
   const project = ProjectData.find((proj) => proj.id === id)
 
@@ -32,12 +34,30 @@ export default function ProjectDetails() {
     return () => window.removeEventListener("mousemove", handleMouseMove)
   }, [])
 
+  useEffect(() => {
+    // Prevent scrolling when fullscreen is active
+    if (isFullscreen) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+
+    // Cleanup function
+    return () => {
+      document.body.style.overflow = ""
+    }
+  }, [isFullscreen])
+
   const nextImage = () => {
     setActiveImage((prev) => (prev + 1) % project.gallery.length)
   }
 
   const prevImage = () => {
     setActiveImage((prev) => (prev - 1 + project.gallery.length) % project.gallery.length)
+  }
+
+  const toggleFullscreen = () => {
+    setIsFullscreen(!isFullscreen)
   }
 
   if (!project) {
@@ -107,6 +127,76 @@ export default function ProjectDetails() {
               <p className="text-gray-300 leading-relaxed">{project.fullDescription}</p>
             </div>
 
+            {/* Enhanced Gallery Section - Now larger and more prominent */}
+            <div className="bg-gray-900/40 rounded-xl p-6 backdrop-blur-sm border border-gray-800/50 shadow-lg">
+              <h3 className="text-xl font-semibold text-cyan-400 mb-4 flex items-center">
+                <span className="inline-block w-1 h-6 bg-cyan-400 mr-3 rounded-full"></span>
+                Project Gallery
+              </h3>
+
+              {/* Main gallery image with navigation - LARGER SIZE */}
+              <div className="relative rounded-xl overflow-hidden border border-gray-700/50 shadow-lg mb-4 group">
+                <img
+                  src={project.gallery[activeImage] || "/placeholder.svg"}
+                  alt={`Gallery image ${activeImage + 1}`}
+                  className="w-full h-96 object-cover object-center"
+                />
+
+                {/* Image navigation controls */}
+                <div className="absolute inset-0 flex items-center justify-between px-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <button
+                    onClick={prevImage}
+                    className="bg-black/60 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
+                    aria-label="Previous image"
+                  >
+                    <ChevronLeft className="h-5 w-5" />
+                  </button>
+                  <button
+                    onClick={nextImage}
+                    className="bg-black/60 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
+                    aria-label="Next image"
+                  >
+                    <ChevronRight className="h-5 w-5" />
+                  </button>
+                </div>
+
+                {/* Fullscreen button */}
+                <button
+                  onClick={toggleFullscreen}
+                  className="absolute bottom-3 right-3 bg-black/60 hover:bg-black/80 text-white p-2 rounded-full transition-colors opacity-0 group-hover:opacity-100"
+                  aria-label="View fullscreen"
+                >
+                  <Maximize className="h-4 w-4" />
+                </button>
+
+                {/* Image counter */}
+                <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100">
+                  {activeImage + 1} / {project.gallery.length}
+                </div>
+              </div>
+
+              {/* Thumbnails - Larger and more visible */}
+              <div className="grid grid-cols-5 gap-3">
+                {project.gallery.map((img, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveImage(index)}
+                    className={`rounded-lg overflow-hidden transition-all ${
+                      activeImage === index
+                        ? "ring-2 ring-cyan-400 opacity-100"
+                        : "ring-1 ring-gray-700 opacity-70 hover:opacity-100"
+                    }`}
+                  >
+                    <img
+                      src={img || "/placeholder.svg"}
+                      alt={`Thumbnail ${index + 1}`}
+                      className="w-full h-16 object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+
             {/* Two column layout for objectives and outcomes */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* Objectives */}
@@ -139,75 +229,6 @@ export default function ProjectDetails() {
                     </li>
                   ))}
                 </ul>
-              </div>
-            </div>
-
-            {/* Gallery */}
-            <div className="bg-gray-900/40 rounded-xl p-6 backdrop-blur-sm border border-gray-800/50 shadow-lg">
-              <h3 className="text-xl font-semibold text-cyan-400 mb-4 flex items-center">
-                <span className="inline-block w-1 h-6 bg-cyan-400 mr-3 rounded-full"></span>
-                Project Gallery
-              </h3>
-
-              {/* Main gallery image with navigation */}
-              <div className="relative rounded-xl overflow-hidden border border-gray-700/50 shadow-lg mb-4 group">
-                <img
-                  src={project.gallery[activeImage] || "/placeholder.svg"}
-                  alt={`Gallery image ${activeImage + 1}`}
-                  className="w-full h-64 object-cover object-center"
-                />
-
-                {/* Image navigation controls */}
-                <div className="absolute inset-0 flex items-center justify-between px-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                  <button
-                    onClick={prevImage}
-                    className="bg-black/60 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
-                    aria-label="Previous image"
-                  >
-                    <ChevronLeft className="h-5 w-5" />
-                  </button>
-                  <button
-                    onClick={nextImage}
-                    className="bg-black/60 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
-                    aria-label="Next image"
-                  >
-                    <ChevronRight className="h-5 w-5" />
-                  </button>
-                </div>
-
-                {/* Fullscreen button */}
-                <button
-                  className="absolute bottom-3 right-3 bg-black/60 hover:bg-black/80 text-white p-2 rounded-full transition-colors opacity-0 group-hover:opacity-100"
-                  aria-label="View fullscreen"
-                >
-                  <Maximize className="h-4 w-4" />
-                </button>
-
-                {/* Image counter */}
-                <div className="absolute bottom-3 left-3 bg-black/60 text-white text-xs px-2 py-1 rounded-md opacity-0 group-hover:opacity-100">
-                  {activeImage + 1} / {project.gallery.length}
-                </div>
-              </div>
-
-              {/* Thumbnails */}
-              <div className="grid grid-cols-5 gap-2">
-                {project.gallery.map((img, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setActiveImage(index)}
-                    className={`rounded-lg overflow-hidden transition-all ${
-                      activeImage === index
-                        ? "ring-2 ring-cyan-400 opacity-100"
-                        : "ring-1 ring-gray-700 opacity-70 hover:opacity-100"
-                    }`}
-                  >
-                    <img
-                      src={img || "/placeholder.svg"}
-                      alt={`Thumbnail ${index + 1}`}
-                      className="w-full h-12 object-cover"
-                    />
-                  </button>
-                ))}
               </div>
             </div>
           </div>
@@ -309,6 +330,82 @@ export default function ProjectDetails() {
           </div>
         </div>
       </div>
+
+      {/* Fullscreen Image Modal */}
+      {isFullscreen && (
+        <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center">
+          <div className="relative w-full h-full flex flex-col">
+            {/* Close button */}
+            <div className="absolute top-4 right-4 z-10">
+              <button
+                onClick={toggleFullscreen}
+                className="bg-black/60 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
+                aria-label="Close fullscreen view"
+              >
+                <X className="h-6 w-6" />
+              </button>
+            </div>
+
+            {/* Image counter */}
+            <div className="absolute top-4 left-4 z-10 bg-black/60 text-white px-3 py-1.5 rounded-md">
+              {activeImage + 1} / {project.gallery.length}
+            </div>
+
+            {/* Main image container */}
+            <div className="flex-1 flex items-center justify-center p-4">
+              <img
+                src={project.gallery[activeImage] || "/placeholder.svg"}
+                alt={`Gallery image ${activeImage + 1}`}
+                className="max-h-[90vh] max-w-[90vw] object-contain"
+              />
+            </div>
+
+            {/* Navigation controls */}
+            <div className="absolute inset-y-0 left-0 flex items-center">
+              <button
+                onClick={prevImage}
+                className="bg-black/40 hover:bg-black/60 text-white p-3 rounded-r-xl transition-colors ml-2"
+                aria-label="Previous image"
+              >
+                <ChevronLeft className="h-8 w-8" />
+              </button>
+            </div>
+
+            <div className="absolute inset-y-0 right-0 flex items-center">
+              <button
+                onClick={nextImage}
+                className="bg-black/40 hover:bg-black/60 text-white p-3 rounded-l-xl transition-colors mr-2"
+                aria-label="Next image"
+              >
+                <ChevronRight className="h-8 w-8" />
+              </button>
+            </div>
+
+            {/* Thumbnails at the bottom */}
+            <div className="p-4 bg-black/60">
+              <div className="flex justify-center gap-2 overflow-x-auto py-2 px-4">
+                {project.gallery.map((img, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveImage(index)}
+                    className={`rounded-md overflow-hidden transition-all flex-shrink-0 ${
+                      activeImage === index
+                        ? "ring-2 ring-cyan-400 opacity-100"
+                        : "ring-1 ring-gray-700 opacity-60 hover:opacity-100"
+                    }`}
+                  >
+                    <img
+                      src={img || "/placeholder.svg"}
+                      alt={`Thumbnail ${index + 1}`}
+                      className="w-16 h-12 object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -6,7 +6,7 @@
     "title": "Virtual Piano on Arduino",
     "description": "simulate the piano which produces different musical notes without using piano keys but according to the distance of the finger tip from a sensor",
     "fullDescription": "The main objective of this project is to simulate the piano which produces different musical notes without using piano keys and according to the distance of the finger tip from the ultrasonic sensor. For making this project we used the Arduino IDE software in which we wrote a code for detecting the distance of the fingertip from the sensor. Then using the Python programming language, we connected the Serial Monitor of the Arduino IDE software with the Python. Python code mainly comprises of the code of connecting the Serial Monitor and then storing the various notes in wav audio format like Sa, Re, Ga, Ma, Pa, Dh, Ni in an array. Future versions could incorporate advanced features like dynamic volume modulation, portability and support for multiple octaves to enhance its versatility.",
-    "image": "https://drive.google.com/file/d/19PMpB_XMieWb8SugwgglxTr6sfZHblwD/view",
+    "image": "/project_images/virtual_piano.jpeg",
     "category": "Beginner",
     "members": [
       "Vaidik Shah",
@@ -22,8 +22,8 @@
       "pyserial"
     ],
     "gallery": [
-      "https://drive.google.com/file/d/19PMpB_XMieWb8SugwgglxTr6sfZHblwD/view",
-      "https://drive.google.com/file/d/19PMpB_XMieWb8SugwgglxTr6sfZHblwD/view"
+      "/project_images/virtual_piano.jpeg",
+      
     ],
     "objectives": [
       "to play basic eight music notes without piano keys and play required sound with the help of speaker of the laptop"
@@ -39,7 +39,7 @@
     "title": "Bluetooth Speaker using ESP 32",
     "description": "use an ESP32 as a Bluetooth A2DP sink to receive audio, output it via I2S, and display song metadata on an OLED screen.",
     "fullDescription": "The project involved:\n(a) Wireless communication between esp and source for sound (Bluetooth using the I2S protocol)\n(b) Display the details of the audio file (like the artist name for a song) on LED screen using the SPI protocol.",
-    "image": "https://drive.google.com/drive/folders/1jst_ecjmhN8OJrua2F3SOHW1nVMOv5qZ?usp=drive_link",
+    "image": "/project_images/Bluetooth_Speaker.jpg",
     "category": "Beginner",
     "members": [
       "Adithya g",
@@ -56,8 +56,8 @@
       "SPI  protocol"
     ],
     "gallery": [
-      "https://drive.google.com/drive/folders/1jst_ecjmhN8OJrua2F3SOHW1nVMOv5qZ?usp=drive_link",
-      "Bluetooth speaker"
+      "/project_images/Bluetooth_Speaker.jpg",
+      
     ],
     "objectives": [
       "1)Implement wireless comuunication of data using bluetooth module in the esp32 by I2S protocol 2)Display the audio details in the oled diaplay by wireless communication by SPI protocol."
@@ -107,7 +107,7 @@
     "title": "LED Game using Arduino",
     "description": "Building a simple LED based game to catch a particular led out of multiple LEDs glowing at same time with minimizing GPIO pins",
     "fullDescription": "This project focuses on the use of 3x8 decoders to drive an LED game. The game has a rectangle of 16 LEDs which light up one by one forming a pattern, the speed of which can be changed using a potentiometer. We have used Arduino Uno as the microprocessor to drive the game.",
-    "image": "https://drive.google.com/file/d/18BeCE-m9HUSS6QQPUFhIzvUxvuNgN_xE/view?usp=drive_link",
+    "image": "/project_images/LED_3.jpg",
     "category": "Beginner",
     "members": [
       "karan hitesh bagthariya",
@@ -124,8 +124,7 @@
       "Decoder"
     ],
     "gallery": [
-      "https://drive.google.com/file/d/18BeCE-m9HUSS6QQPUFhIzvUxvuNgN_xE/view?usp=drive_link",
-      "LED game - Google Drive"
+      "/project_images/LED_3.jpg"
     ],
     "objectives": [
       "To build a game which does the following: 1.) A series of leds light one by one making a wave 2.) A potentiometer which changes the difficulty by increasing or decreasing speed of animation 3.) A push button which stops the game if pushed at the correct moment"
@@ -171,7 +170,7 @@
     "title": "Stroboscope",
     "description": "stroboscope creates the illusion that a moving object is still or moving differently (forward or backward)",
     "fullDescription": "This project is a non-contact rotational speed measurement system using a stroboscope built around the Arduino Nano 33 BLE Sense. The system flashes a 9W LED at a controllable frequency. When the flash frequency matches the rotational speed (RPM) of an object, the object appears stationary — allowing accurate RPM estimation.\n\nMultiple control methods are implemented:\n- Manual frequency control using a potentiometer\n- Gesture-based control using the built-in IMU (accelerometer + gyroscope)\n- Bluetooth communication with a smartphone for monitoring and control",
-    "image": "https://drive.google.com/drive/folders/1HfXdL7126vNmSyxEhwISp3AX0GDpDEKN?usp=sharing",
+    "image": "/project_images/breadboard_ckt.jpeg",
     "category": "Intermediate (Complete)",
     "members": [
       "prashant narang",
@@ -194,8 +193,7 @@
       "Gyrometer"
     ],
     "gallery": [
-      "https://drive.google.com/drive/folders/1HfXdL7126vNmSyxEhwISp3AX0GDpDEKN?usp=sharing",
-      "https://drive.google.com/drive/folders/1HfXdL7126vNmSyxEhwISp3AX0GDpDEKN?usp=sharing"
+      "/project_images/outer_look.jpeg"
     ],
     "objectives": [
       "Create a non-contact RPM measurement tool",
@@ -254,7 +252,7 @@
     "title": "Digital Clock",
     "description": "making a digital clock with ICs",
     "fullDescription": "The project involved making a 24-hour tunable digital clock from scratch using 7-segment displays, IC 4060, IC 4026, and a crystal oscillator on a breadboard powered by a mobile charger. It gets a 32 kHz frequency from the oscillator, which is converted to a 1 Hz signal using an IC 4060-based clock divider circuit. The 1 Hz signal is fed to the IC 4026, which converts clock pulses into outputs for the 7-segment displays. We used combinational logic to make the IC 4060s work together with the rest of the identical ICs properly—for example, to increase the minute count only after 60 seconds have passed using the output from the earlier ICs. We can adjust time using switches at the hour and minute levels.",
-    "image": "https://drive.google.com/file/d/19rMv_cXq3HjSsIWkFjQgvJ1fN7sTT4TD/view?usp=sharing",
+    "image": "/project_images/photo2_digital_clock.jpg",
     "category": "Intermediate (Complete)",
     "members": [
       "nitin mewara",
@@ -274,8 +272,8 @@
       "4026 and 4060 ICs"
     ],
     "gallery": [
-      "https://drive.google.com/file/d/19rMv_cXq3HjSsIWkFjQgvJ1fN7sTT4TD/view?usp=sharing",
-      "https://drive.google.com/drive/folders/1l7TQrJR_Phc0Ju9x1cs_HZjkfkSZC3bc?usp=sharing"
+      "/project_images/Photo1_Digital_clock.jpg",
+      "/project_images/photo2_digital_clock (1).jpg"
     ],
     "objectives": [
       "1) Make a 24-hour digital clock from scratch using ICs and a crystal oscillator without using a microcontroller. 2) To set any desired time."
@@ -291,7 +289,7 @@
     "title": "Automatic Irrigation System",
     "description": "Smart irrigation system to address overwatering on campus. Using a soil humidity sensor, it ensures water is supplied only when needed, based on real-time moisture levels",
     "fullDescription": "Smart Irrigation system was a proposed solution to address a major water wastage due to uncontrolled and unsupervised irrigation system in the college. The solution is very simple, we take in moisture level of soil using an industrial grade soil moisture sensor and send the data via wireless communication method using HTTP requests, to another microcontroller, which ensures the turning off and on of a solenoid valve. When turned on, the valve switches to let the water flow through it. This simple method reduced water wastage and the sensor can be easily calibrated according to season, soil type etc. The battery that powers the microcontroller connected to sensor is recharged using a solar panel making it usable for long term. The microcontroller on the other side is powered using a 5V adapter.",
-    "image": "Irrigation system",
+    "image": "/project_images/cover.jpg",
     "category": "Intermediate (Complete)",
     "members": [
       "varad gaekwad",
@@ -363,7 +361,7 @@
     "title": "Inferencing Neural Network on FPGA",
     "description": "Designing a verilog based neural network processor on FPGA",
     "fullDescription": "The project involved -: a) Creating a Multiplication Accumulation Unit using Cordic Algorithm for increased efficiency : (b) Creating array of such computing units along with control engine, to inference trained neural network, by fetching parameter data from BRAM on PYNQ Z2 FPGA",
-    "image": "https://drive.google.com/file/d/1xYxoemFA0UnHir0ICmDxcIRAsHUQrlRi/view?usp=sharing",
+    "image": "/project_images/istockphoto-1488575697-612x612.jpg",
     "category": "Intermediate (Ongoing)",
     "members": [
       "Advay Kunte",
@@ -378,8 +376,8 @@
       "PYNQ FPGA"
     ],
     "gallery": [
-      "https://drive.google.com/file/d/1xYxoemFA0UnHir0ICmDxcIRAsHUQrlRi/view?usp=sharing",
-      "https://drive.google.com/file/d/1Op48gBDyhb5oUZFXILYjHOrsL-3vus_x/view?usp=sharing"
+      "/project_images/istockphoto-1488575697-612x612.jpg",
+     
     ],
     "objectives": [
       "1) Implementing CORDIC Algorithm for performing multiplication, as well as computing results of activation function 2) Adapting research paper based DNN processor architecture using BRAM and array of CORDIC based computing units and setting up control path for accurate inferencing"
@@ -434,7 +432,7 @@
     "title": "Cryptography (Ascon Cipher) on FPGA",
     "description": "Designing a cryptographic hardware",
     "fullDescription": "The project focuses on the hardware implementation of the ASCON authenticated encryption cipher, a lightweight cryptographic algorithm standardized by NIST for secure communication in resource-constrained environments like IoT. The goal is to design the AEAD (Authenticated Encryption with Associated Data) version of ASCON in Verilog, emphasizing modularity, efficiency, and correctness. The implementation includes a core permutation module that operates on a 320-bit internal state using substitution and linear diffusion layers across multiple rounds, and a controller FSM that orchestrates the various phases of encryption, such as initialization, associated data absorption, plaintext processing, and finalization. The FSM is designed to handle control signals robustly and manage corner cases, including scenarios with no associated data or plaintext. So far, the permutation module and controller have been successfully implemented, and the encryption functionality has been completed and verified. The design processes associated data, encrypts plaintext into ciphertext, and generates the authentication tag correctly. Currently, work has begun on implementing the decryption flow, which involves reversing the encryption logic while ensuring integrity verification through tag checking. The project is moving toward full integration and testing of the complete AEAD scheme, including simulation and potential hardware synthesis.",
-    "image": "https://drive.google.com/file/d/1qmuKkxDL4_6NINdMF3TPdA0T8aukYLlD/view?usp=drivesdk",
+    "image": "/project_images/145_2021_9398_Figa_HTML.png ",
     "category": "Intermediate (Ongoing)",
     "members": [
       "vansh sabharwal",
@@ -454,8 +452,7 @@
       "Vivado"
     ],
     "gallery": [
-      "https://drive.google.com/file/d/1qmuKkxDL4_6NINdMF3TPdA0T8aukYLlD/view?usp=drivesdk",
-      "https://drive.google.com/file/d/1r0CMtntTLxiHpqntkvJgOWqmEGXnjPlo/view?usp=drivesdk"
+      "/project_images/145_2021_9398_Figa_HTML.png "
     ],
     "objectives": [
       "to implement this cryptographic algorithm on FPGA"
@@ -503,7 +500,7 @@
     "title": "RISC V 32 bit Pipelined Microcontroller",
     "description": "Developing a fully pipelined 32-bit RISC V based microcontroller",
     "fullDescription": "The project involves: (1) Developing a 32 bit RISC-V pipelined core for implementing all the fundamental logical/arithmetic/memory instructions from scratch. (2) Implement UART peripheral and memory mapping. (3) Conversion from RTL to GDSII. (4) Designing an ASIC for the developed microprocessor.",
-    "image": "https://drive.google.com/file/d/1z9K263A7FuoCuwbu-I4kLQ79Uopfmylq/view?usp=sharing",
+    "image": "/project_images/RISC.png",
     "category": "Intermedaiate (Ongoing)",
     "members": [
       "nitin mewara",
@@ -521,8 +518,7 @@
       "Synopsys Design Tools"
     ],
     "gallery": [
-      "https://drive.google.com/file/d/1z9K263A7FuoCuwbu-I4kLQ79Uopfmylq/view?usp=sharing",
-      "https://drive.google.com/file/d/1bep-vegdaqy-AaCnaoWlaTw1UJeaVLnw/view?usp=sharing"
+      "/project_images/risc_2.png"
     ],
     "objectives": [
       "1) To learn about digital design and computer architecture to implement pipelined 32-bit RISC-V microprocessor. 2) To implement all the necessary instructions like (add, sub, lw, sw, mul, jal, beq, etc.) 3) Implement UART peripheral and memory mapping for real world implementation. 4) RTL to GDSII conversion for obtaining a structured layout of the digital design. 5) fabricating the ASIC using design tools"
