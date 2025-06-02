@@ -366,7 +366,7 @@ export default function ProjectsPage() {
         <header className="relative mb-20">
           <div className="text-center max-w-5xl mx-auto">
             {/* Icon with enhanced styling */}
-            <div className="mb-10 inline-flex items-center justify-center">
+            {/* <div className="mb-10 inline-flex items-center justify-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 rounded-full blur-xl opacity-60 animate-pulse" />
                 <div className="relative bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 p-5 rounded-full shadow-2xl">
@@ -376,10 +376,10 @@ export default function ProjectsPage() {
                   <Sparkles className="h-4 w-4 text-yellow-400 animate-pulse" />
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Main title with enhanced typography */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight mt-12">
               <span className="bg-gradient-to-r from-white via-cyan-100 to-white bg-clip-text text-transparent">
                 Our{" "}
               </span>
