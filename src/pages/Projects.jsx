@@ -1,5 +1,3 @@
-
-
 import Navbar from "../components/Navbar"
 import { useNavigate } from "react-router-dom"
 import { useState, useRef, useEffect } from "react"
@@ -27,8 +25,7 @@ export default function ProjectsPage() {
     title: "Virtual Piano",
     description:
       "A virtual piano using Arduino that produces different musical notes based on the distance of fingertips from an ultrasonic sensor.",
-    image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+    image:"/project_images/virtual_piano.jpeg",
     category: "music",
     members: ["Vaidik Shah", "Aryan Jain", "Bhavy Ranka", "Parekh Om Nirav", "Mihir Jain"],
     date: "2024",
@@ -41,7 +38,7 @@ export default function ProjectsPage() {
     description:
       "A Bluetooth speaker using ESP32 as a Bluetooth A2DP sink to receive audio, output via I2S, and display song metadata on an OLED screen.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/Bluetooth_Speaker.jpg",
     category: "audio",
     members: ["Adithya G", "Adharsh Gopalakrishnan", "Arnav Kumar", "Guru Pranav", "Rucha Gadgil"],
     date: "2025",
@@ -67,7 +64,7 @@ export default function ProjectsPage() {
     description:
       "A simple LED-based game using Arduino Uno with a 3x8 decoder to create patterns and adjustable speed via a potentiometer.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/LED_3.jpg",
     category: "gaming",
     members: ["Karan Hitesh Bagthariya", "Yash Modi", "Ninad Kulkarni", "Vaibhav Sharma", "Viraj Patel", "Priyanshi Mahto"],
     date: "2025",
@@ -93,7 +90,7 @@ export default function ProjectsPage() {
     description:
       "A non-contact RPM measurement system using Arduino Nano 33 BLE Sense with LED flashing, gesture control, and Bluetooth monitoring.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/breadboard_ckt.jpeg",
     category: "measurement",
     members: ["Prashant Narang", "Arihant Bhandari", "Vigneshwar", "Poorna Sai Reddy", "Atharvakant Chandorikar", "Bhaskar", "Venepally Sathvika", "Prem Pratik"],
     date: "2024",
@@ -119,7 +116,7 @@ export default function ProjectsPage() {
     description:
       "A 24-hour tunable digital clock built using 7-segment displays, ICs, and a crystal oscillator on a breadboard.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/photo2_digital_clock.jpg",
     category: "timekeeping",
     members: ["Nitin Mewara", "Daksh Chandel", "Harshal Rudraksha", "Aniket Goyal", "Kuvam Bhutani", "Mudit Tiwari", "Abhijeet Parmar", "Nishit Rupavatia"],
     date: "2024",
@@ -132,7 +129,7 @@ export default function ProjectsPage() {
     description:
       "A smart irrigation system using ESP8266 and soil moisture sensors to reduce water wastage with IoT-based control.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/cover.jpg",
     category: "agriculture",
     members: ["Varad Gaekwad", "Sharik Mansoori", "Vaidehi Bhat"],
     date: "2024",
@@ -158,7 +155,7 @@ export default function ProjectsPage() {
     description:
       "A Verilog-based neural network processor on PYNQ Z2 FPGA using CORDIC algorithm for efficient computation.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/istockphoto-1488575697-612x612.jpg",
     category: "artificial intelligence",
     members: ["Advay Kunte", "Prabhat Sati", "Vaidehi Bhat"],
     date: "2025",
@@ -184,7 +181,7 @@ export default function ProjectsPage() {
     description:
       "A Verilog implementation of the ASCON cipher on FPGA for lightweight cryptographic applications in IoT.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/145_2021_9398_Figa_HTML.png  ",
     category: "cryptography",
     members: ["Vansh Sabharwal", "Poorna Sai Reddy", "Harshal Rudraksh", "Venepally Sathwika", "Arihant Bhandari", "Yama Akshay", "Bhaskar", "Hilori Jain", "Atharvakant Chandorikar"],
     date: "2025",
@@ -210,7 +207,7 @@ export default function ProjectsPage() {
     description:
       "A 32-bit pipelined RISC-V microcontroller with UART and memory mapping, implemented on FPGA.",
     image:
-      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cm9ib3RpY3N8ZW58MHx8MHx8fDA%3D",
+      "/project_images/RISC.png",
     category: "computer architecture",
     members: ["Nitin Mewara", "Daksh Chandel", "Kuvam Bhutani", "Aniket Goyal", "Aman Choudhary"],
     date: "2025",
